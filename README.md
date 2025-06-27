@@ -1,5 +1,6 @@
 # Architect Tomorrow Podcast and Community
-This is a work in progress repository for holding content relating to the Architect Tomorrow Community and Podcast
+Welcome to the website for the Enterprise, Technology and Sustainability podcast and community Architect Tomorrow!
+This is a work in progress site for content relating to the Community and Podcast bare with us while we build it - if you'd like to help get in touch by raising an issue / PR on the [GitHub](https://github.com/cronky/architecttomorrow/)
 
 ## Where can you find Architect Tomorrow?
 - [Architect Tomorrow YouTube Channel](https://youtube.com/ArchitectTomorrow/)
