@@ -12,8 +12,7 @@ body {
 body.controls-hidden .color-controls,
 body.controls-hidden .logo-controls,
 body.controls-hidden .position-slider,
-body.controls-hidden .resources-toggle,
-body.controls-hidden .social-links {
+body.controls-hidden .resources-toggle {
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.5s ease-out, visibility 0.5s;
@@ -62,10 +61,12 @@ body.controls-hidden .social-links {
     .text-content {
         font-size: 4.5rem;
     }
+
     .logo {
         width: 9rem;
         height: 9rem;
     }
+
     .banner {
         gap: 2rem;
     }
@@ -76,10 +77,12 @@ body.controls-hidden .social-links {
         flex-direction: column;
         gap: 1.5rem;
     }
+
     .text-content {
         font-size: 3rem;
         text-align: center;
     }
+
     .logo {
         width: 7rem;
         height: 7rem;
@@ -195,8 +198,6 @@ body.controls-hidden .social-links {
     justify-content: center;
     flex-wrap: wrap;
     max-width: 90vw;
-    opacity: 0;
-    pointer-events: none;
     transition: opacity 0.4s ease-in-out;
 }
 
@@ -222,7 +223,7 @@ body.controls-hidden .social-links {
 .social-btn:hover {
     background: #d4f5d2;
     transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .color-btn {
@@ -240,18 +241,19 @@ body.controls-hidden .social-links {
 
 .color-btn.active {
     border-width: 3px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 /* Resources Panel Styles */
 .resources-panel {
     position: fixed;
-    left: -400px; /* Hidden by default */
+    left: -400px;
+    /* Hidden by default */
     top: 0;
     width: 350px;
     height: 100vh;
     background: white;
-    box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
     z-index: 200;
     transition: left 0.3s ease-in-out;
     padding: 20px;

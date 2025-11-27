@@ -7,3 +7,8 @@
   url: "https://youtube.com/c/ArchitectTomorrow"
   tags: ["#ArchitectTomorrow", "Video", "YouTube"]
   description: "Video content and podcast episodes."
+
+- title: "Latest #ArchitectTomorrow Posts"
+  url: "https://www.linkedin.com/search/results/content/?keywords=%23ArchitectTomorrow&origin=FACETED_SEARCH&sid=Hvk&sortBy=%22date_posted%22"
+  tags: ["#ArchitectTomorrow", "LinkedIn", "Search"]
+  description: "Recent posts tagged with #ArchitectTomorrow on LinkedIn."
