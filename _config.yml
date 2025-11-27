@@ -1,0 +1,5 @@
+title: Architect Tomorrow
+description: The Enterprise, Technology and Sustainability podcast and community
+theme: jekyll-theme-cayman # Optional, but good to have a fallback
+plugins:
+  - jekyll-seo-tag

@@ -1,0 +1,110 @@
+---
+layout: default
+title: Architect Tomorrow
+---
+
+<button class="master-toggle" onclick="toggleControls()">Toggle UI</button>
+<button class="resources-toggle" onclick="toggleResources()">Resources</button>
+
+<div class="position-slider">
+    <label for="pos-range">Position: 50%</label>
+    <input type="range" id="pos-range" min="0" max="100" value="50" oninput="adjustPosition(this.value)">
+</div>
+
+<div class="banner">
+    <div class="text-content">
+        Architect<br>Tomorrow
+    </div>
+    <svg class="logo" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <!-- Outer large V/A shape -->
+        <path d="M 30 175 L 100 45 L 170 175" fill="none" stroke="#0d3d1f" stroke-width="20" stroke-linecap="round"
+            stroke-linejoin="round" />
+        <path d="M 30 175 L 100 45 L 170 175" fill="none" stroke="#9ce599" stroke-width="16" stroke-linecap="round"
+            stroke-linejoin="round" />
+
+        <!-- Left internal stroke - smallest leg - lightest -->
+        <path d="M 96 174 L 77.154 139" fill="none" stroke="#0d3d1f" stroke-width="20" stroke-linecap="round" />
+        <path d="M 96 174 L 77.154 139" fill="none" stroke="#d4f5d2" stroke-width="16" stroke-linecap="round" />
+
+        <!-- Right internal stroke - largest leg - middle -->
+        <path d="M 132 174 L 95.385 106" fill="none" stroke="#0d3d1f" stroke-width="20" stroke-linecap="round" />
+        <path d="M 132 174 L 95.385 106" fill="none" stroke="#b8edb5" stroke-width="16" stroke-linecap="round" />
+    </svg>
+</div>
+
+<div class="social-links-container">
+    <div class="social-links" id="socialLinks">
+        {% for social in site.data.socials %}
+        <a href="{{ social.url }}" target="_blank" class="social-btn">{{ social.title }}</a>
+        {% endfor %}
+    </div>
+</div>
+
+<div class="color-controls">
+    <button class="color-btn active" style="background: linear-gradient(135deg, #2c6b4c 0%, #8eb95b 100%);"
+        onclick="changeBackground('gradient')" title="Green Gradient"></button>
+    <button class="color-btn" style="background: linear-gradient(135deg, #1e3a5f 0%, #5b9bd5 100%);"
+        onclick="changeBackground('blueGradient')" title="Blue Gradient"></button>
+    <button class="color-btn" style="background: linear-gradient(135deg, #6b0f0f 0%, #cd5c5c 100%);"
+        onclick="changeBackground('redGradient')" title="Red Gradient"></button>
+    <button class="color-btn" style="background: linear-gradient(135deg, #d35400 0%, #f39c12 100%);"
+        onclick="changeBackground('orangeGradient')" title="Orange Gradient"></button>
+    <button class="color-btn" style="background: linear-gradient(135deg, #6b4423 0%, #d68347 100%);"
+        onclick="changeBackground('autumnal')" title="Autumnal"></button>
+    <button class="color-btn" style="background: #2c6b4c;" onclick="changeBackground('dark')"
+        title="Dark Green"></button>
+    <button class="color-btn" style="background: #8eb95b;" onclick="changeBackground('light')"
+        title="Light Green"></button>
+    <button class="color-btn" style="background: linear-gradient(135deg, #3a3a3a 0%, #d4d4d4 100%);"
+        onclick="changeBackground('grey')" title="Greyscale"></button>
+    <button class="color-btn" style="background: white;" onclick="changeBackground('white')" title="White"></button>
+    <button class="color-btn" style="background: black;" onclick="changeBackground('black')" title="Black"></button>
+</div>
+
+<div class="logo-controls">
+    <button class="color-btn active" style="background: linear-gradient(180deg, #9ce599 0%, #b8edb5 50%, #d4f5d2 100%);"
+        onclick="changeLogoColors('green')" title="Green"></button>
+    <button class="color-btn" style="background: linear-gradient(180deg, #5b9bd5 0%, #8ab8e6 50%, #c5ddf5 100%);"
+        onclick="changeLogoColors('blue')" title="Blue"></button>
+    <button class="color-btn" style="background: linear-gradient(180deg, #6b0f0f 0%, #a52a2a 50%, #cd5c5c 100%);"
+        onclick="changeLogoColors('red')" title="Red"></button>
+    <button class="color-btn" style="background: linear-gradient(180deg, #9b59b6 0%, #bb8fce 50%, #e8daef 100%);"
+        onclick="changeLogoColors('purple')" title="Purple"></button>
+    <button class="color-btn" style="background: linear-gradient(180deg, #e67e22 0%, #f0ad75 50%, #f9dcc4 100%);"
+        onclick="changeLogoColors('orange')" title="Orange"></button>
+    <button class="color-btn" style="background: linear-gradient(180deg, #8b4513 0%, #cd853f 50%, #daa520 100%);"
+        onclick="changeLogoColors('autumnal')" title="Autumnal"></button>
+    <button class="color-btn" style="background: linear-gradient(180deg, #666666 0%, #999999 50%, #d9d9d9 100%);"
+        onclick="changeLogoColors('grey')" title="Greyscale"></button>
+    <button class="color-btn" style="background: white;" onclick="changeLogoColors('white')" title="White"></button>
+    <button class="color-btn" style="background: black;" onclick="changeLogoColors('black')" title="Black"></button>
+</div>
+
+<!-- Resources Panel -->
+<div class="resources-panel" id="resourcesPanel">
+    <div class="resources-header">
+        <h2>Resources</h2>
+        <button class="close-resources" onclick="toggleResources()">&times;</button>
+    </div>
+
+    <div class="search-container">
+        <input type="text" id="resourceSearch" class="search-input" placeholder="Search resources..."
+            onkeyup="filterResources()">
+    </div>
+
+    <div id="resourcesList">
+        {% for resource in site.data.resources %}
+        <div class="resource-item">
+            <a href="{{ resource.url }}" target="_blank" class="resource-title">{{ resource.title }}</a>
+            {% if resource.description %}
+            <p class="resource-desc">{{ resource.description }}</p>
+            {% endif %}
+            <div class="resource-tags">
+                {% for tag in resource.tags %}
+                <span class="tag">{{ tag }}</span>
+                {% endfor %}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
