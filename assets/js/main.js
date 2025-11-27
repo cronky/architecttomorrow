@@ -6,17 +6,17 @@ function adjustPosition(value) {
     const banner = document.querySelector('.banner');
     const socialLinks = document.querySelector('.social-links-container');
     const label = document.querySelector('.position-slider label');
-    
+
     // Update label
     label.textContent = `Position: ${value}%`;
-    
+
     // Calculate padding based on slider (0 = bottom, 50 = centre, 100 = top)
     // At 50 (centre), padding-bottom is 0
     // At 100 (top), padding-bottom is 33vh
     // At 0 (bottom), padding-bottom is -33vh (which means padding-top)
     const paddingBottom = ((value - 50) / 50) * 33;
     banner.style.paddingBottom = `${paddingBottom}vh`;
-    
+
     // Adjust social links position proportionally
     const linksTop = 75 - ((value - 50) / 50) * 17;
     socialLinks.style.top = `${linksTop}vh`;
@@ -30,16 +30,16 @@ function toggleResources() {
 function changeBackground(type) {
     const banner = document.querySelector('.banner');
     const buttons = document.querySelectorAll('.color-controls .color-btn');
-    
+
     // Remove active class from all buttons
     buttons.forEach(btn => btn.classList.remove('active'));
-    
+
     // Add active class to clicked button
     if (event && event.target) {
         event.target.classList.add('active');
     }
-    
-    switch(type) {
+
+    switch (type) {
         case 'gradient':
             banner.style.background = 'linear-gradient(135deg, #2c6b4c 0%, #8eb95b 100%)';
             break;
@@ -77,18 +77,18 @@ function changeLogoColors(colorScheme) {
     const textContent = document.querySelector('.text-content');
     const paths = document.querySelectorAll('.logo path');
     const buttons = document.querySelectorAll('.logo-controls .color-btn');
-    
+
     // Remove active class from all buttons
     buttons.forEach(btn => btn.classList.remove('active'));
-    
+
     // Add active class to clicked button
     if (event && event.target) {
         event.target.classList.add('active');
     }
-    
+
     let colors = {};
-    
-    switch(colorScheme) {
+
+    switch (colorScheme) {
         case 'green':
             colors = {
                 outline: '#0d3d1f',
@@ -171,14 +171,14 @@ function changeLogoColors(colorScheme) {
             };
             break;
     }
-    
+
     // Update text color and outline
     if (textContent) {
         textContent.style.color = colors.text;
         textContent.style.webkitTextStroke = `1px ${colors.outline}`;
         textContent.style.textStroke = `1px ${colors.outline}`;
     }
-    
+
     // Update logo paths (outline, fill, outline, fill, outline, fill)
     // Outer A: darkest, Left leg (smallest): lightest, Right leg (largest): middle
     if (paths.length >= 6) {
@@ -192,19 +192,20 @@ function changeLogoColors(colorScheme) {
 }
 
 // Search/Filter Functionality
+// Search/Filter Functionality
 function filterResources() {
     const input = document.getElementById('resourceSearch');
-    const filter = input.value.toLowerCase();
-    const items = document.getElementsByClassName('resource-item');
+    const filter = input.value.toLowerCase().trim();
+    const items = document.querySelectorAll('.resource-item');
 
-    for (let i = 0; i < items.length; i++) {
-        const title = items[i].querySelector('.resource-title').textContent || items[i].querySelector('.resource-title').innerText;
-        const tags = items[i].querySelector('.resource-tags').textContent || items[i].querySelector('.resource-tags').innerText;
-        
-        if (title.toLowerCase().indexOf(filter) > -1 || tags.toLowerCase().indexOf(filter) > -1) {
-            items[i].style.display = "";
+    items.forEach(item => {
+        const title = (item.querySelector('.resource-title').textContent || '').toLowerCase();
+        const tags = (item.querySelector('.resource-tags').textContent || '').toLowerCase();
+
+        if (title.includes(filter) || tags.includes(filter)) {
+            item.style.display = "";
         } else {
-            items[i].style.display = "none";
+            item.style.display = "none";
         }
-    }
+    });
 }
