@@ -1,20 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-
-    .color-controls,
-    .logo-controls,
-    .position-slider,
-    .resources-toggle,
-    .social-links {
-        opacity: 1;
-        visibility: visible;
-        transition: opacity 1s ease-in-out, visibility 1s;
-    }
 
     .banner {
         width: 100vw;
