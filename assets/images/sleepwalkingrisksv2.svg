@@ -1,0 +1,163 @@
+<svg viewBox="0 0 1400 860" xmlns="http://www.w3.org/2000/svg" style="background: #ffffff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#444"/>
+    </marker>
+    <marker id="arr-cascade" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#e85d04"/>
+    </marker>
+    <marker id="arr-fb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#c1272d"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="700" y="38" text-anchor="middle" font-size="24" font-weight="700" fill="#1a1a1a">AI Sleepwalking Risks V2: Personal and Enterprise</text>
+  <text x="700" y="62" text-anchor="middle" font-size="13" fill="#666">Nine risks, two domains, with reinforcing loops centred on Relevance Degradation</text>
+
+  <!-- ENTERPRISE BAND (top) -->
+  <rect x="30" y="90" width="1340" height="210" fill="#1e5b94" fill-opacity="0.05" stroke="#1e5b94" stroke-opacity="0.4" stroke-width="1.2" rx="10"/>
+  <text x="50" y="112" font-size="12" font-weight="700" fill="#1e5b94" letter-spacing="2">ENTERPRISE / ORGANISATIONAL SLEEPWALKING</text>
+  <text x="50" y="128" font-size="10.5" fill="#888">Risks that reshape institutions, markets, and competitive dynamics</text>
+
+  <!-- AI Arms Race (root driver) -->
+  <rect x="100" y="160" width="260" height="60" fill="#1e5b94" stroke="#163f68" stroke-width="2" rx="6"/>
+  <text x="230" y="192" text-anchor="middle" font-size="15" font-weight="700" fill="#fff">AI Arms Race</text>
+  <text x="230" y="210" text-anchor="middle" font-size="11" fill="#fff" fill-opacity="0.92">Competitive deployment pressure</text>
+
+  <!-- Digital Divide -->
+  <rect x="400" y="160" width="260" height="60" fill="#fff" stroke="#1e5b94" stroke-width="1.8" rx="6"/>
+  <text x="530" y="192" text-anchor="middle" font-size="15" font-weight="700" fill="#1e5b94">Digital Divide</text>
+  <text x="530" y="210" text-anchor="middle" font-size="11" fill="#666">Access tiers widen as AI spreads</text>
+
+  <!-- Asymmetrical Overload -->
+  <rect x="700" y="160" width="280" height="60" fill="#fff" stroke="#1e5b94" stroke-width="1.8" rx="6"/>
+  <text x="840" y="192" text-anchor="middle" font-size="15" font-weight="700" fill="#1e5b94">Asymmetrical Overload</text>
+  <text x="840" y="210" text-anchor="middle" font-size="11" fill="#666">AI volume exceeds review capacity</text>
+
+  <!-- IP & Know-How Leakage -->
+  <rect x="1020" y="160" width="300" height="60" fill="#fff" stroke="#1e5b94" stroke-width="1.8" rx="6"/>
+  <text x="1170" y="192" text-anchor="middle" font-size="15" font-weight="700" fill="#1e5b94">IP &amp; Know-How Leakage</text>
+  <text x="1170" y="210" text-anchor="middle" font-size="11" fill="#666">Proprietary data, process, expertise → vendor models</text>
+
+
+  <!-- Within-enterprise arrows -->
+  <line x1="360" y1="190" x2="400" y2="190" stroke="#e85d04" stroke-width="1.8" marker-end="url(#arr-cascade)"/>
+  <line x1="660" y1="190" x2="700" y2="190" stroke="#e85d04" stroke-width="1.8" marker-end="url(#arr-cascade)"/>
+  <line x1="980" y1="190" x2="1020" y2="190" stroke="#e85d04" stroke-width="1.8" marker-end="url(#arr-cascade)"/>
+
+  <!-- Enterprise note -->
+  <text x="50" y="270" font-size="11" fill="#1e5b94" font-style="italic">Arms Race pressure cascades: fewer moments to pause, more data shared with vendors, more volume directed inward.</text>
+  <text x="50" y="286" font-size="11" fill="#1e5b94" font-style="italic">IP leakage accelerates under Arms Race conditions — "we need to deploy now" overrides "we need to understand what we're sharing."</text>
+
+  <!-- Divider with label -->
+  <line x1="30" y1="318" x2="1370" y2="318" stroke="#ccc" stroke-width="1.5" stroke-dasharray="5,4"/>
+  <rect x="600" y="306" width="200" height="24" fill="#fff" stroke="#999" stroke-width="1" rx="12"/>
+  <text x="700" y="322" text-anchor="middle" font-size="11" font-weight="700" fill="#555" letter-spacing="1.5">PRESSURE CROSSES THE LINE</text>
+
+  <!-- PERSONAL BAND (bottom) -->
+  <rect x="30" y="340" width="1340" height="310" fill="#c1272d" fill-opacity="0.05" stroke="#c1272d" stroke-opacity="0.4" stroke-width="1.2" rx="10"/>
+  <text x="50" y="362" font-size="12" font-weight="700" fill="#c1272d" letter-spacing="2">PERSONAL SLEEPWALKING</text>
+  <text x="50" y="378" font-size="10.5" fill="#888">Risks that reshape individual cognition, behaviour, and social experience</text>
+
+  <!-- Information integrity sub-cluster (subtle inner tint) -->
+  <rect x="60" y="395" width="1280" height="80" fill="#1e5b94" fill-opacity="0.04" stroke="none" rx="6"/>
+  <text x="80" y="413" font-size="10" font-weight="700" fill="#1e5b94" letter-spacing="1.2">INFORMATION INTEGRITY</text>
+
+  <!-- Impersonation -->
+  <rect x="380" y="418" width="280" height="48" fill="#fff" stroke="#c1272d" stroke-width="1.6" rx="6"/>
+  <text x="520" y="440" text-anchor="middle" font-size="15" font-weight="700" fill="#c1272d">Impersonation</text>
+  <text x="520" y="458" text-anchor="middle" font-size="11" fill="#666">AI content indistinguishable from human</text>
+
+  <!-- Human vs Bot -->
+  <rect x="720" y="418" width="260" height="48" fill="#fff" stroke="#c1272d" stroke-width="1.6" rx="6"/>
+  <text x="850" y="440" text-anchor="middle" font-size="15" font-weight="700" fill="#c1272d">Human vs Bot</text>
+  <text x="850" y="458" text-anchor="middle" font-size="11" fill="#666">Authentication uncertainty everywhere</text>
+
+  <!-- Cognitive erosion sub-cluster -->
+  <rect x="60" y="495" width="1280" height="140" fill="#c1272d" fill-opacity="0.04" stroke="none" rx="6"/>
+  <text x="80" y="513" font-size="10" font-weight="700" fill="#c1272d" letter-spacing="1.2">COGNITIVE EROSION — the self-reinforcing spiral</text>
+
+  <!-- Tech Addiction -->
+  <rect x="90" y="525" width="240" height="100" fill="#fff" stroke="#c1272d" stroke-width="1.8" rx="6"/>
+  <text x="210" y="555" text-anchor="middle" font-size="15" font-weight="700" fill="#c1272d">Tech Addiction</text>
+  <text x="210" y="578" text-anchor="middle" font-size="11" fill="#666">Curated content displaces</text>
+  <text x="210" y="594" text-anchor="middle" font-size="11" fill="#666">active engagement; easier</text>
+  <text x="210" y="610" text-anchor="middle" font-size="11" fill="#666">to defer than to think</text>
+
+  <!-- Relevance Degradation (HUB) -->
+  <rect x="460" y="510" width="340" height="130" fill="#fff" stroke="#c1272d" stroke-width="3" rx="6"/>
+  <text x="630" y="542" text-anchor="middle" font-size="16" font-weight="700" fill="#c1272d">Relevance Degradation</text>
+  <text x="630" y="566" text-anchor="middle" font-size="11" fill="#666">Skills atrophy where AI does the work;</text>
+  <text x="630" y="582" text-anchor="middle" font-size="11" fill="#666">reviewers lose the expertise they</text>
+  <text x="630" y="598" text-anchor="middle" font-size="11" fill="#666">need to review; junior pipelines collapse</text>
+  <rect x="550" y="610" width="160" height="18" fill="#c1272d" rx="0"/>
+  <text x="630" y="624" text-anchor="middle" font-size="10" font-weight="700" fill="#fff" letter-spacing="1.5">CENTRAL HUB</text>
+
+  <!-- Confirmation Fatigue -->
+  <rect x="930" y="525" width="280" height="100" fill="#fff" stroke="#c1272d" stroke-width="1.8" rx="6"/>
+  <text x="1070" y="555" text-anchor="middle" font-size="15" font-weight="700" fill="#c1272d">Confirmation Fatigue</text>
+  <text x="1070" y="578" text-anchor="middle" font-size="11" fill="#666">Review becomes ceremonial;</text>
+  <text x="1070" y="594" text-anchor="middle" font-size="11" fill="#666">human-in-the-loop becomes</text>
+  <text x="1070" y="610" text-anchor="middle" font-size="11" fill="#666">a moral crumple zone</text>
+
+  <!-- CROSS-BOUNDARY ARROWS (enterprise → personal) -->
+
+  <!-- Asymmetrical Overload → Confirmation Fatigue (the compounding channel) -->
+  <line x1="1070" y1="220" x2="1070" y2="525" stroke="#e85d04" stroke-width="2.4" marker-end="url(#arr-cascade)"/>
+  <text x="1085" y="370" font-size="11" fill="#e85d04" font-weight="700" font-style="italic">volume &gt; capacity</text>
+  <text x="1085" y="386" font-size="10" fill="#e85d04" font-style="italic">(Fallacy 2 → Fallacy 3)</text>
+
+  <!-- Arms Race → Impersonation -->
+  <path d="M 280 220 Q 320 320 420 418" stroke="#444" stroke-width="1.5" fill="none" marker-end="url(#arr)"/>
+
+  <!-- Impersonation → Human vs Bot (within trust) -->
+  <line x1="660" y1="442" x2="720" y2="442" stroke="#444" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- Human vs Bot → Tech Addiction (retreat) -->
+  <path d="M 740 466 Q 500 490 260 525" stroke="#444" stroke-width="1.5" fill="none" marker-end="url(#arr)"/>
+  <text x="310" y="500" font-size="10" fill="#666" font-style="italic">retreat from uncertainty</text>
+
+  <!-- Impersonation → Relevance Degradation (weak/dashed) -->
+  <path d="M 560 466 Q 580 488 600 510" stroke="#777" stroke-width="1.4" fill="none" marker-end="url(#arr)" stroke-dasharray="4,3"/>
+  <text x="597" y="495" font-size="10" fill="#888" font-style="italic">tainted learning substrate</text>
+
+  <!-- FEEDBACK LOOPS (the cognitive spiral) -->
+
+  <!-- Loop 1: Tech Addiction ↔ Relevance Degradation -->
+  <path d="M 330 550 Q 395 535 460 550" stroke="#c1272d" stroke-width="2.4" fill="none" marker-end="url(#arr-fb)"/>
+  <path d="M 460 605 Q 395 620 330 605" stroke="#c1272d" stroke-width="2.4" fill="none" marker-end="url(#arr-fb)"/>
+  <text x="395" y="527" text-anchor="middle" font-size="10" font-weight="700" fill="#c1272d" letter-spacing="1.2">LOOP 1</text>
+
+  <!-- Loop 2: Relevance Degradation ↔ Confirmation Fatigue -->
+  <path d="M 800 550 Q 865 535 930 550" stroke="#c1272d" stroke-width="2.4" fill="none" marker-end="url(#arr-fb)"/>
+  <path d="M 930 605 Q 865 620 800 605" stroke="#c1272d" stroke-width="2.4" fill="none" marker-end="url(#arr-fb)"/>
+  <text x="865" y="527" text-anchor="middle" font-size="10" font-weight="700" fill="#c1272d" letter-spacing="1.2">LOOP 2</text>
+
+  <!-- LEGEND -->
+  <rect x="30" y="670" width="1340" height="130" fill="#fafafa" stroke="#ddd" stroke-width="1" rx="6"/>
+  <text x="50" y="694" font-size="11" font-weight="700" fill="#333" letter-spacing="1.2">READING THIS DIAGRAM</text>
+
+  <line x1="50" y1="720" x2="100" y2="720" stroke="#444" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="115" y="724" font-size="11" fill="#555">Direct influence</text>
+
+  <line x1="240" y1="720" x2="290" y2="720" stroke="#e85d04" stroke-width="2.2" marker-end="url(#arr-cascade)"/>
+  <text x="305" y="724" font-size="11" fill="#555">Arms Race pressure cascade</text>
+
+  <line x1="540" y1="720" x2="590" y2="720" stroke="#c1272d" stroke-width="2.4" marker-end="url(#arr-fb)"/>
+  <text x="605" y="724" font-size="11" fill="#555">Reinforcing feedback link</text>
+
+
+  <line x1="1000" y1="720" x2="1050" y2="720" stroke="#777" stroke-width="1.4" stroke-dasharray="4,3" marker-end="url(#arr)"/>
+  <text x="1065" y="724" font-size="11" fill="#555">Weaker / indirect link</text>
+
+  <text x="50" y="750" font-size="11" fill="#555">Enterprise risks cascade from AI Arms Race. Personal risks compound through two reinforcing loops, both anchored on Relevance Degradation.</text>
+  <text x="50" y="766" font-size="11" fill="#555">The critical channel runs vertically on the right: Asymmetrical Overload → Confirmation Fatigue. This is where enterprise productivity pressure becomes personal cognitive failure.</text>
+  <text x="50" y="782" font-size="11" fill="#555" font-weight="600">Intervening on the hub (unassisted-work rotation, chaos anti-AI drills, deliberate skills maintenance) breaks both loops at once — the highest-leverage response.</text>
+
+  <!-- Attribution -->
+  <text x="50" y="832" font-size="10" fill="#999" font-style="italic">Oliver Cronk · Architect Tomorrow · Sleepwalking Risks v2 with personal / enterprise split · Companion to "Going Deeper on AI Sleepwalking"</text>
+  <text x="1370" y="832" text-anchor="end" font-size="10" fill="#999" font-style="italic">architecttomorrow.com</text>
+
+</svg>
