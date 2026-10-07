@@ -1,0 +1,118 @@
+---
+title: "Where is AI leading us? Possibilities for Business and Society"
+date: 2024-12-18 15:57:00 +0000
+excerpt: "Note I have now evolved my thinking and have a \"Cone of AI Uncertainty\" that has been a popular talk track. This article is an earlier version of that thinking but has a different focus."
+linkedin_url: https://www.linkedin.com/pulse/where-ai-leading-us-considerations-business-society-oliver-cronk-6ku6e
+---
+*Note I have now evolved my thinking and have a* [*"Cone of AI Uncertainty"*](https://www.linkedin.com/pulse/navigating-cone-ai-uncertainty-oliver-cronk-mfvoe/) *that has been a popular talk track. This article is an earlier version of that thinking but has a different focus.*
+
+As we’ve passed the two-year mark since generative AI captured global attention, organisations continue to grapple with separating the transformative potential of AI (of all types not just Language Models) from market hyperbole.  Through my work with clients across various sectors, I've observed remarkable potential, significant challenges and the pragmatism it takes to get realistic solutions into production. While some early predictions proved overly optimistic, other developments have exceeded expectations with Agentic and Compound AI in particular throwing up a whole range of new possibilities (more on that later on).
+
+## The Cone of AI Enabled Possibilities
+
+Looking at the impact of AI requires a fair amount of futurology – which as it turns out is largely formed from analysing the recent past, previous and current trends and projecting out different possibilities for these into the future. Futurologists often talk about a [cone of possibilities](https://minkowski.org/cone-of-possiblities/) – extreme possibilities on either side of the cone and more realistic / business as usual going through the middle.
+
+For the latest developments on AI - on the top of this cone you have massive innovation, new possibilities and sustainable, responsible growth. In the middle you have incremental steady improvement and at the bottom you have a dystopian nightmare - AI misalignment, mass centralised control and power, overconsumption, environmental and societal damage etc. Of course one of the many possibilities in the cone is that all this turns out to be an area of overinflated and overpriced solutions looking for problems. Where we will actually land is still very hard to predict - but this article aims to provoke longer term thinking - assuming this does prove transformative.
+
+![](https://media.licdn.com/dms/image/v2/D4E12AQGvjAZV47NsDw/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1734533213438?e=1784160000&v=beta&t=pue8vve0yFNqm7DoNczqb5qL08RBAlevXY2Qm5DZWiI)
+
+Visualising a cone of possibilities for AI. Created by Oliver using Google's Imagen 3 model.
+
+### The Evolution of AI: From Narrow to General Capabilities
+
+The state of today’s AI capabilities has been marked by distinct phases of development. Traditional machine learning (ML) systems excel at specific, well-defined tasks - from identifying fraudulent transactions to predicting the need for equipment maintenance. These narrow AI systems are trained on specific datasets and operate within carefully defined parameters, making them reliable but inherently limited in scope.
+
+The emergence of Large Language Models (LLMs) marked a significant shift toward more general-purpose AI capabilities. Unlike their narrow AI predecessors, these models appear to “understand” and excel at generate human language, help their users reason about diverse topics, and adapt to new tasks without specific training. This flexibility represents a crucial step toward more general AI applications, though still far from true artificial general intelligence (AGI). Whether the current path of ever bigger generative AI models will lead to AGI is the topic of massive debate and only time will tell. As per [my last article on AI; I seriously hope we take an efficient, conscientious](https://blog.scottlogic.com/2024/07/16/the-impending-implosion-of-generative-ai-and-the-potential-of-a-more-sustainable-future.html) route rather than brute force approaches.
+
+Recently I’ve been working on what is possibly the next evolution of technology solutions through a combination of approaches. Blending traditional programming approaches, diverse data sources and both the reliability of narrow ML for specific tasks and the adaptability of LLMs for broader understanding and decision-making. This convergence enables new possibilities in autonomous and semi-autonomous systems, which has been a big area of R&D this year. Doing that work has triggered me to think about where these systems might lead business and society at large - hence this article and series!
+
+## Beyond Generation: Understanding Agentic AI
+
+To understand the evolution path we are on towards greater autonomy, it’s worth taking a moment to look at [algorithmic trading](https://en.wikipedia.org/wiki/Algorithmic_trading), one of the earliest successful implementations of autonomous (but narrow) AI systems in business.
+
+For over two decades, financial markets have operated with AI-driven trading systems that can analyse market conditions, execute trades, and adjust strategies in real-time. These systems demonstrate both the potential and limitations of narrow AI. While highly effective within their specific domain, algorithmic trading systems are purpose-built for a single function, operating within carefully defined parameters and market conditions.
+
+Agentic AI represents a significant expansion of autonomous capabilities. Where algorithmic trading systems excel at their specific task but cannot adapt to other domains, modern agentic AI systems can operate across a broad range of functions and adapt to new scenarios. They combine the autonomous decision-making capabilities pioneered in algorithmic trading with the flexibility and general-purpose capabilities of large language models.
+
+### The Spectrum of Agentic AI
+
+The development of agentic AI isn't following a single path. We're seeing a few distinct approaches emerge:
+
+### The Augmentation or “Reactive” Approach
+
+These systems work alongside humans and are more of a natural evolution of current chat bots like ChatGPT and Claude, handling information processing at scales beyond human capacity while ideally preserving human judgment for critical decisions. For example, in financial services, AI agents might continuously monitor market conditions and execute routine trades while escalating unusual patterns or high-stakes decisions to human traders. You can also think of more advanced co-pilots (particularly for software development) as fitting this model – where a human is still very much at the centre but an agent based co-pilot is handling a chain of sophisticated activities on your behalf (refactoring an entire code repository at once) rather than just helping you with the individual code file you are working on.
+
+Bottom line is that the agent is reacting to human requests and the human is the loop most of the time.
+
+### The Autonomous or Proactive Approach
+
+At the other end of the spectrum, fully autonomous systems operate independently within defined parameters. These “headless” or UI less systems represent both the greatest potential and the highest risk, raising important questions about control, accountability, and the changing nature of human work. An example of this could be an agent that automatically switches insurance products for customers when it finds a better renewal quote.
+
+Bottom line here is that this is proactive and the AI mostly stands alone unless it hits a non-happy path and needs to escalate to a person – or a point that requires human input which brings us on to the next point:
+
+### Combining the Two – Proactive and Reactive Agentic AI
+
+We’ve also been doing Research and Development that explores the idea of scheduled autonomous agent activities (perhaps for more complex tasks) that run periodically that alert a person once complete. Potentially delivered like a bit like push notifications on your phone or a daily email alert with a summary. Clicking on content within that alert takes you into more of an augmentation interface that allows you to dig deeper into what the autonomous analysis has discovered. A concrete example of this is environmental news story analysis for ESG analysts – where there is overnight sifting of news stories relating to companies of interest – dropping into an interactive user interface where the findings can be drilled into further – allowing the human to make a final call on what the agent has thrown up.
+
+In the Architecture instalment of this series we will go into this in more detail – touching on how these approaches influence the decision to use synchronous or asynchronous patterns for example.
+
+## The Transformation of Business Models
+
+Many businesses have been built on predictable patterns, often relying on information asymmetry, customer inertia, or high switching costs to maintain competitive advantages. AI, particularly in its agentic form, threatens to fundamentally disrupt these established models while creating new opportunities to create value.
+
+I’ll get a bit more specific on how AI (and better access to data – through initiatives like Smart Data) could challenge the status quo:
+
+- **Information Asymmetry**: Where businesses have traditionally profited from superior market knowledge or expertise, AI is democratizing access to sophisticated analysis and insights
+- **Switching Costs**: AI agents can automate the complex process of comparing services, managing transitions, and handling administrative overhead that historically kept customers from switching providers – it’s exciting to see ideas like [AlgoBanking that I came up with nearly 10 years ago](https://www.linkedin.com/pulse/algo-banking-next-big-thing-retail-oliver-cronk/) potentially brought to life.
+- Service Bundling: The ability of AI to unbundle and repackage services threatens traditional product groupings that relied on customer convenience or lack of alternatives
+
+**Emerging Value Creation Opportunities**
+
+- **Hyper-Personalization** at Scale: AI enables organizations to move beyond segment-based marketing to truly individualized service delivery without proportional cost increases. This is going to be the big game changer for me – how do you offer truly unique tailored services that help the customer do things that were out of reach.
+- **Reimagining business ecosystems**. Dynamic Value Networks - Rather than linear value chains, AI enables complex, adaptive networks of value creation where services and capabilities can be dynamically combined and reconfigured. Imagine autonomous bidding and matching across marketplaces. Something that I hope in the near future could be used to enable the circular economy – where waste from one business can be used as the feedstock for another.
+- **Getting Ahead of Customer Needs**: Rather than just reacting to what customers ask for, organisations can use AI to spot patterns and trends that show what customers might want next. Think of how Netflix suggests shows you might like, but applied across all sorts of businesses - from retailers predicting when you'll run out of household items to energy companies adjusting your tariff before your bills spike. This moves businesses from always playing catch-up to staying one step ahead of customer demands. If you were to ask an LLM it would probably call it something fancy like Predictive Value Creation!
+
+## Strategic Implications
+
+For business strategists and architects, these changes demand a fundamental rethinking of:
+
+- Where is being Human really valued in your customer interactions, processes, value chain? Where will they be outgunned by AI on the other side of an interaction or transaction?
+- Where would augmentation massively improve efficiency, scale, customer satisfaction?
+- Where would automation and removal of boring repetitive processes improve employee satisfaction and retention?
+- How value is created and captured in your industry – how could that be disintermediated or disrupted by innovation (not just AI but more transparent data etc?)
+- Where competitive advantages will persist versus erode
+- What new capabilities need to be developed or acquired Where do you experiment and innovate yourself vs buy platforms and commodity capabilities?
+- Moving forward where is your secret sauce / USP? It might not be where it is today?
+- Will your brand value survive a post augmentation and automated world or do you need to reposition? (For example are you at risk from going from a high end service to a commodity?)
+
+## The Dark Side of AI Mediation
+
+As many of you will know I consider the darker side of digital (probably from watching too much [Black Mirror](https://www.imdb.com/title/tt2085059/)!) But as I’ve started to think about the impact of the inevitable AI arms race (I need to get my AI to talk to your AI) it feels like we might hit a cascading effect. As AI systems increasingly filter and curate our information landscape, we face the prospect of what might be called "cognitive isolation" - where our worldview becomes increasingly shaped by algorithms rather than direct human engagement with information (something that is already true of course with social media). Post truth accelerated and augmented by new AI platforms is the sort of thing that keeps me up at night.
+
+The risk of filter bubbles becomes amplified when AI agents mediate most of our professional and personal communications. The convenience of having AI systems manage our communications could gradually erode our ability to make independent judgments or maintain meaningful human relationships.
+
+## Understanding the Risks
+
+While agentic AI promises significant benefits, it also introduces novel risks that organisations must consider. These range from the immediate and practical to the more theoretical. At one end of the spectrum, we might see AI agents optimising for the wrong metrics - like an overzealous procurement system that achieves cost savings by ordering vast quantities of low-quality supplies, technically meeting its objective while creating new problems. At the other end, computer scientists have long discussed the "paperclip maximiser" thought experiment, where an AI tasked with manufacturing paperclips single-mindedly converts all available resources into paperclips - a scenario that, while extreme, illustrates the importance of carefully defining AI objectives and constraints. As organisations deploy multiple interacting AI agents, we must be mindful of potential cascade effects, where automated systems create feedback loops that can rapidly amplify small issues into significant problems. The key is not to avoid deployment of agentic AI, but to approach it with a clear understanding of both its capabilities and limitations, ensuring that systems are designed with appropriate constraints and human oversight. We will expand on the risks and the opportunities in a subsequent piece.
+
+*Originally I* planning on writing the following as follow ups - but the [AI Sleepwalking](https://www.linkedin.com/pulse/ai-sleepwalking-risks-v2-including-automation-fallacies-oliver-cronk-bf6ee/) and [AI Autumn principles](https://www.linkedin.com/pulse/practical-pragmatic-ai-principles-autumn-oliver-cronk-jkwfe/) came out of this thinking instead.
+
+## Looking Ahead: A Series on AI Transformation
+
+To help organisations and individuals think about how to navigate these changes, we'll be exploring several crucial aspects of this transformation in forthcoming articles:
+
+"**Beyond Human Scale: When AI Becomes Essential**" Exploring how modern challenges have exceeded human cognitive processing capabilities, and examining the implications of an AI arms race where "I'll get my AI to talk to your AI" becomes the norm.
+
+"**Opportunities and Risks in the Age of Autonomous AI**" A balanced examination of how organisations can innovate with AI while managing inherent risks and challenges.
+
+"**Impacts to Technology Architecture: Building for the AI Era**" Analyzing how AI systems, particularly agentic AI, are changing our approach to system design and integration.
+
+"**Trust and Verification in AI-First Systems**" Investigating how organisations can maintain system integrity and trust in an environment where AI makes autonomous decisions.
+
+"**Sustainable AI: Environmental Implications of Intelligent Systems**" Examining the environmental impact of AI adoption and strategies for sustainable implementation. For now you can [check out](https://blog.scottlogic.com/2024/07/16/the-impending-implosion-of-generative-ai-and-the-potential-of-a-more-sustainable-future.html) [my](https://blog.scottlogic.com/2024/07/16/the-impending-implosion-of-generative-ai-and-the-potential-of-a-more-sustainable-future.html) [previous article which touch on this topic](https://blog.scottlogic.com/2024/07/16/the-impending-implosion-of-generative-ai-and-the-potential-of-a-more-sustainable-future.html).
+
+## The Path Forward
+
+The emergence of agentic AI represents more than just a technological advancement - it marks a fundamental shift in how we think about the relationship between human and machine. Success in this new environment requires organisations to be both bold and thoughtful - willing to reimagine their operations while carefully considering the broader implications of their choices.
+
+Going back to our futurology and the cone of possibilities - the rest of the series is designed to help you think about what those possibilities might look like. More importantly to stimulate your thinking on what you might need to do to capitalise opportunities or mitigate risks they present.

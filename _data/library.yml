@@ -1,0 +1,30 @@
+# Content for /resources/. Add items to any list; empty lists show a "coming soon" note.
+reference_architecture: []
+# Diagrams: image is a path under /assets/images/, page is optional (link to the article that explains it)
+diagrams:
+  - title: "Architecture is not neutral: twelve shifts from extractive to regenerative"
+    description: The Regenerative Architecture Principles on one page. Community draft, open for debate.
+    image: /assets/images/regenerative-principles.webp
+    alt: Poster of twelve shifts from extractive to regenerative architecture, such as Extraction to Regeneration and Lock-in to Interoperability
+    page: /resources/regenerative-architecture-principles/
+  - title: AI sleepwalking risks (v2)
+    description: Nine sleepwalking risks split into enterprise and personal, with the critical channel where asymmetrical overload becomes confirmation fatigue.
+    image: /assets/images/sleepwalkingrisksv2.svg
+    alt: Diagram of nine AI sleepwalking risks, split into enterprise and personal categories
+    page: /articles/2026/ai-sleepwalking-risks-v2-including-automation-fallacies/
+# Notable articles: url is a site path or full URL. date (for ordering on the home page) and image are optional/needed respectively.
+notable:
+  - title: Regenerative Architecture Principles
+    date: 2026-07-01
+    image: /assets/images/regenerative-principles.webp
+    description: Twelve mindset shifts from extractive to regenerative architecture. A community draft (v1.0, July 2026), open for debate, with a link to the full document to suggest edits.
+    url: /resources/regenerative-architecture-principles/
+  - title: AI Sleepwalking Risks V2, including Automation Fallacies
+    date: 2026-04-21
+    image: /assets/images/sleepwalkingrisksv2.svg
+    description: The 2026 update, with the diagram and the fallacies that drive the risks.
+    url: /articles/2026/ai-sleepwalking-risks-v2-including-automation-fallacies/
+  - title: Are we sleepwalking into tomorrow's AI challenges?
+    date: 2025-02-10
+    description: The original 2025 article that started the thread.
+    url: /articles/2025/are-we-sleepwalking-into-tomorrow-s-ai-challenges/

@@ -1,0 +1,24 @@
+---
+layout: default
+title: Episodes
+section: episodes
+description: Every full episode of the Architect Tomorrow podcast, with links to Spotify, Apple Podcasts and YouTube.
+---
+<div class="wrap prose">
+  <h1>Podcast episodes</h1>
+  <p class="lead">Conversations with architects and tech-savvy leaders on emerging technology, responsible innovation, sustainability and career journeys. Listen on <a href="https://open.spotify.com/show/4QDEGzABgnQAsLep944Fsu" rel="noopener">Spotify</a>, <a href="https://podcasts.apple.com/us/podcast/architect-tomorrow/id1542490113" rel="noopener">Apple Podcasts</a> or watch on <a href="https://youtube.com/c/ArchitectTomorrow" rel="noopener">YouTube</a>.</p>
+  {% if site.data.episodes and site.data.episodes.size > 0 %}
+  <ul class="cards cards-wide">
+    {% for e in site.data.episodes %}
+    <li class="card">
+      <a class="thumb" href="https://www.youtube.com/watch?v={{ e.id }}" rel="noopener" tabindex="-1" aria-hidden="true"><img src="{{ '/assets/images/episodes/' | append: e.id | append: '.jpg' | relative_url }}" alt="" width="320" height="180" loading="lazy"></a>
+      <h2 class="h3"><a href="https://www.youtube.com/watch?v={{ e.id }}" rel="noopener">{{ e.title | escape }}</a></h2>
+      <p class="meta"><time datetime="{{ e.date }}">{{ e.date | date: '%-d %B %Y' }}</time></p>
+    </li>
+    {% endfor %}
+  </ul>
+  <p>Looking for something older? The <a href="https://www.youtube.com/playlist?list=PLu1Byoup02RbIKEeNSCAJcN4R7Uxb9paP" rel="noopener">full playlist</a> has every episode.</p>
+  {% else %}
+  {% include video.html list="PLu1Byoup02RbIKEeNSCAJcN4R7Uxb9paP" title="Architect Tomorrow full episodes playlist" %}
+  {% endif %}
+</div>

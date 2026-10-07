@@ -1,7 +1,63 @@
 title: Architect Tomorrow
-description: The Enterprise, Technology and Sustainability podcast and community
-theme: jekyll-theme-cayman # Optional, but good to have a fallback
+tagline: Independent podcast, newsletter and community for architects who want to shape a brighter future
+description: >-
+  An independent, community-led podcast, newsletter and global network for enterprise,
+  business and technology architects and tech-savvy leaders who believe architecture
+  should actively shape a brighter future.
+lang: en-GB
+logo: /assets/images/og-image.jpg
+twitter:
+  card: summary_large_image
+author: Oliver Cronk
+
+# Set to the live domain before going live (Jekyll swaps in localhost for `jekyll serve`).
+url: "https://architecttomorrow.com"
+baseurl: ""
+
 plugins:
   - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
 
-repository: cronky/architecttomorrow
+feed:
+  path: /posts.xml   # unused default (no blog posts); the real feed is /feed.xml
+  collections:
+    articles:
+      path: /feed.xml
+
+collections:
+  articles:
+    output: true
+    permalink: /articles/:year/:slug/
+  archive:
+    output: true
+    permalink: /archive/:slug/
+
+defaults:
+  - scope: { path: "" }
+    values: { image: /assets/images/og-image.jpg }
+  - scope: { path: "", type: articles }
+    values: { layout: article, section: articles }
+  - scope: { path: "", type: archive }
+    values: { layout: article, section: archive }
+
+# Cloudflare Pages reads _headers; Jekyll skips underscore files unless included.
+include:
+  - _headers
+exclude:
+  - sourcematerial
+  - scripts
+  - README.md
+  - LICENSE
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .github
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+sass:
+  style: compressed

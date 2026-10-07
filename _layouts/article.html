@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<article class="wrap prose">
+  <p class="crumb"><a href="{{ '/' | append: page.section | append: '/' | relative_url }}">&larr; {% if page.section == 'archive' %}Archive{% else %}Articles{% endif %}</a></p>
+  <h1>{{ page.title | escape }}</h1>
+  <p class="meta">
+    <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%-d %B %Y' }}</time>
+    &middot; {% assign words = content | number_of_words %}{{ words | divided_by: 220 | plus: 1 }} min read
+  </p>
+  {% if page.section == 'archive' %}
+  <p class="note">From the archive: written before or outside the Architect Tomorrow newsletter, so it may be out of date.</p>
+  {% endif %}
+  {{ content }}
+  {% if page.linkedin_url %}
+  <p class="note">Originally published on <a href="{{ page.linkedin_url }}" rel="noopener">LinkedIn</a>. Comments and discussion live there.</p>
+  {% endif %}
+</article>

@@ -1,0 +1,9 @@
+---
+layout: default
+---
+<article class="wrap prose">
+  {% if page.crumb %}<p class="crumb"><a href="{{ page.crumb_url | relative_url }}">&larr; {{ page.crumb }}</a></p>{% endif %}
+  {% if page.status == 'draft' %}<p class="draft"><strong>Draft.</strong> {{ page.draft_note | default: "This page is a work in progress and has not been reviewed yet." }}</p>{% endif %}
+  <h1>{{ page.title | escape }}</h1>
+  {{ content }}
+</article>

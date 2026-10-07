@@ -1,0 +1,40 @@
+# Community leads and regular guests, shown on /community/ (leads also on the home page).
+# group: lead | guest. Optional: role, bio, url (LinkedIn), photo (path under /assets/images/people/, square ~200px WebP).
+# Bios describe a specialism or industry, never an employer: people take part personally, and employers change.
+# Blank fields are simply not shown. Bios are short summaries of public descriptions: please check they are happy with them.
+- name: Oliver Cronk
+  group: lead
+  role: Founder, community lead and Europe lead
+  bio: Started Architect Tomorrow at the end of 2019 and hosts the podcast and newsletter.
+  url: https://www.linkedin.com/in/cronky/
+- name: Selena Evans
+  group: lead
+  role: US lead and regular co-host
+  bio: Attorney and certified business architect, based in the USA.
+  url: https://www.linkedin.com/in/selena-evans-jd
+- name: Darryl Carr
+  group: lead
+  role: Australia lead and regular co-host
+  bio: Enterprise architecture leader, based in Australia.
+  url: https://www.linkedin.com/in/darrylcarr
+- name: Kenneth Igiri
+  group: lead
+  role: Africa lead
+  bio: Enterprise architect working in African financial services. # TODO confirm bio and add LinkedIn url
+- name: Tom Fairbairn
+  group: lead
+  role: Integration Architecture Lead
+  bio: Long-time community member working in the integration software industry.
+  url: https://www.linkedin.com/in/tomfairbairn/
+- name: Whynde Kuehn
+  group: guest
+  bio: Business architecture pioneer, educator and author of Strategy to Reality.
+  url: https://www.linkedin.com/in/whynde-kuehn
+- name: Chris Lockhart
+  group: guest
+  bio: Host of the Consultants Saying Things podcast.
+  url: https://www.linkedin.com/in/chrislockhart/
+- name: Chris Booth
+  group: guest
+  url: https://www.linkedin.com/in/chatbotbooth/
+  # TODO add a short bio (describe the industry or specialism, not an employer)
