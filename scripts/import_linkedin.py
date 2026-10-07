@@ -56,6 +56,8 @@ def convert(path):
                 href = href.split("?")[0]
             a.attrs = {"href": href}
     md = markdownify(str(body), heading_style="ATX", bullets="-")
+    # The LinkedIn group was deleted, so keep the words but drop the dead link
+    md = re.sub(r"\[([^\]]*)\]\(https://www\.linkedin\.com/groups/12351004/?\)", r"\1 (the group has since closed)", md)
     md = re.sub(r"\n{3,}", "\n\n", md).replace("​", "").strip()
     if "sleepwalking-risks-v2" in path:  # diagram lives in this repo, so use it directly
         raw = "https://raw.githubusercontent.com/cronky/architecttomorrow/8a0863b9d8c2a26951dca17f31db6c1f5c86d014/assets/images/sleepwalkingrisksv2.svg"

@@ -41,4 +41,4 @@ If you are interested in joining the conversation around any of the above, the f
 - Metaverse and Web3
 - Architecture, Security and Management of Multi-cloud
 
-Thanks for reading! If you are new to the Newsletter you might want to subscribe to it (and also to the YouTube channel: <https://youtube.com/ArchitectTomorrow/> and join the [LinkedIn group (the exclusive backstage area)](https://www.linkedin.com/groups/12351004/).
+Thanks for reading! If you are new to the Newsletter you might want to subscribe to it (and also to the YouTube channel: <https://youtube.com/ArchitectTomorrow/> and join the LinkedIn group (the exclusive backstage area) (the group has since closed).

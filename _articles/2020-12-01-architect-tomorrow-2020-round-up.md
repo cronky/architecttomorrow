@@ -8,7 +8,7 @@ Original titled "#ArchitectAdvent 2020 Calendar" rounding off 2020 with some of 
 
 As [per my post on Dec 1st](https://www.linkedin.com/feed/update/urn:li:activity:6739481725467955201) - #ArchitectAdvent is a playlist from the [Architect Tomorrow](https://youtube.com/c/ArchitectTomorrow/) community (sponsored by [Tanium](https://www.linkedin.com/company/tanium/)) throughout most of December using the #ArchitectAdvent hashtag!
 
-If you want to get the inside track on Architect Tomorrow feel free to [join the LinkedIn group here](https://www.linkedin.com/groups/12351004/).
+If you want to get the inside track on Architect Tomorrow feel free to join the LinkedIn group here (the group has since closed).
 
 ## 1st December: UN SDGs for Architects
 

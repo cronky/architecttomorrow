@@ -26,7 +26,7 @@ A few things to bear in mind:
 
 ## Communicating
 
-**LinkedIn is our primary communication channel.** As we are a broad community we'll use LinkedIn to stay in touch. You can also email Oliver or other organisers directly.
+**LinkedIn is our primary communication channel.** As we are a broad community we'll use LinkedIn to stay in touch: follow the [Architect Tomorrow page](https://www.linkedin.com/company/architect-tomorrow/) and the #ArchitectTomorrow hashtag, or message [Oliver](https://www.linkedin.com/in/cronky/) directly. A dedicated community discussion space is **TBC**.
 
 **Email is the backup channel**, in case we need to speak about something more urgently.
 
@@ -81,4 +81,4 @@ If you need any equipment, please let us know; we might be able to loan you some
 
 ## Anything missing?
 
-Any tips or advice you'd add? Please tell us in the [LinkedIn group](https://www.linkedin.com/groups/12351004/) or message [Oliver](https://www.linkedin.com/in/cronky/).
+Any tips or advice you'd add? Please message [Oliver](https://www.linkedin.com/in/cronky/) or post with #ArchitectTomorrow on LinkedIn.

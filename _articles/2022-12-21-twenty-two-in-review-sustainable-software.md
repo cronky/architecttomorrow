@@ -60,4 +60,4 @@ Thank you to everyone who has watched, read, liked, commented and most of all fe
 
 ### Like and Subscribe :-)
 
-If you aren't already subscribed to this newsletter or the [Architect Tomorrow YouTube](https://youtube.com/ArchitectTomorrow/) please do - it helps grow the reach and quality of the community. If you want more of a [backstage pass check out the LinkedIn Group too](https://www.linkedin.com/groups/12351004/).
+If you aren't already subscribed to this newsletter or the [Architect Tomorrow YouTube](https://youtube.com/ArchitectTomorrow/) please do - it helps grow the reach and quality of the community. If you want more of a backstage pass check out the LinkedIn Group too (the group has since closed).

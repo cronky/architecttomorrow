@@ -23,7 +23,7 @@ If you're passionate about using architecture to make the world genuinely better
 
 ## What is Architect Tomorrow?
 
-**Origins.** Founded by [Oliver Cronk](https://www.linkedin.com/in/cronky/) in 2019 (whilst at Tanium, although now independent), inspired by Eddie Obeng's concept of a "world after midnight" where our environment changes faster than we can understand it. In 2026, its sixth year, Architect Tomorrow is independent and community-led, with volunteer leads across many regions and themes worldwide.
+**Origins.** Founded by [Oliver Cronk](https://www.linkedin.com/in/cronky/) at the end of 2019, before COVID, as a response to not being able to get to physical conferences. It started while Oliver was at Tanium and has been fully independent since 2022. It was inspired by Eddie Obeng's concept of a "world after midnight", where our environment changes faster than we can understand it. Today Architect Tomorrow is independent and community-led, with volunteer leads across many regions and themes worldwide.
 
 **What we cover.** We span four broad areas:
 
@@ -40,7 +40,7 @@ This community is not just about technology on its own. Enterprise architecture 
 
 ## Independence matters
 
-Architect Tomorrow is independent of any vendor, consultancy or recruiter. Contributors are welcome from those organisations, but only where they have a genuine track record of independent thought and contribution. We don't do sponsored content or pay-to-play guest slots, although we are considering some form of sponsorship to cover operational costs (TBC).
+Architect Tomorrow has been independent since 2022, and is independent of any vendor, consultancy or recruiter. Contributors are welcome from those organisations, but only where they have a genuine track record of independent thought and contribution. We don't do sponsored content or pay-to-play guest slots, although we are considering some form of sponsorship to cover operational costs (TBC).
 
 ## Fun as much as informing
 
@@ -51,6 +51,10 @@ The guiding principle: is it insightful? Might it be funny? Could it be both? Th
 ## Diversity and representation
 
 We are committed to ensuring under-represented groups working in tech are visible in the community. The industry needs diversity of thought and experience, and that requires people from all backgrounds to have role models. When we run panels we strive for diversity, but we're pragmatic rather than target-driven, recognising the industry still has a long way to go.
+
+## Who leads it?
+
+Meet the [community leads]({{ '/community/' | relative_url }}), who look after Europe, the US, Australia and Africa.
 
 ## Want to take part?
 

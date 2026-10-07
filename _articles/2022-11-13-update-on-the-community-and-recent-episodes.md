@@ -46,4 +46,4 @@ Enterprise Systems Architecture book by - Daljit Roy Banger
 
 **Sustainable Software** - a variant of the talk track that I am doing next week (Beers with Engineers on the 17th in London - spaces still available get in touch if interested). More on this in the next newsletter.
 
-Do look out for all that over the next few months - and as always if you are interested in getting involved do get in touch via the [LinkedIn group](https://www.linkedin.com/groups/12351004/) (that has effectively become the behind the scenes / community area) or leave a comment / DM.
+Do look out for all that over the next few months - and as always if you are interested in getting involved do get in touch via the LinkedIn group (the group has since closed) (that has effectively become the behind the scenes / community area) or leave a comment / DM.

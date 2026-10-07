@@ -14,21 +14,8 @@ document.addEventListener('click', function (e) {
   f.focus();
 });
 
-// Home hero: switch between the green and light versions (remembered per browser).
+// Preview the green hero (kept for a future dark mode): /?hero=green
 (function () {
-  var hero = document.getElementById('hero'), btn = document.getElementById('hero-toggle');
-  if (!hero || !btn) return;
-  function sync() {
-    var light = hero.getAttribute('data-theme') === 'light';
-    btn.setAttribute('aria-pressed', light);
-    btn.textContent = light ? 'Green hero' : 'Light hero';
-  }
-  btn.hidden = false;
-  sync();
-  btn.addEventListener('click', function () {
-    var light = hero.getAttribute('data-theme') !== 'light';
-    if (light) hero.setAttribute('data-theme', 'light'); else hero.removeAttribute('data-theme');
-    try { localStorage.setItem('at-hero', light ? 'light' : 'green'); } catch (e) {}
-    sync();
-  });
+  var hero = document.getElementById('hero');
+  if (hero && /[?&]hero=green/.test(location.search)) hero.setAttribute('data-theme', 'green');
 })();

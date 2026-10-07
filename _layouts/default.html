@@ -7,6 +7,7 @@
   <title>{% if page.title and page.url != '/' %}{{ page.title | escape }} | {% endif %}{{ site.title }}</title>
   <link rel="icon" href="{{ '/assets/images/favicon.svg' | relative_url }}" type="image/svg+xml">
   <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+  {% if page.noindex %}<meta name="robots" content="noindex">{% endif %}
   {% seo title=false %}
 </head>
 <body>

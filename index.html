@@ -7,7 +7,6 @@ description: An independent, community-led podcast, newsletter and global networ
 {% assign first_ep = episodes | first %}
 {% assign latest_articles = site.articles | sort: 'date' | reverse %}
 <section class="hero" id="hero">
-  <script>try{var h=localStorage.getItem("at-hero");if(location.search.indexOf("hero=light")>-1)h="light";if(h==="light")document.getElementById("hero").setAttribute("data-theme","light")}catch(e){}</script>
   <div class="wrap hero-grid">
     <div>
       <h1>Architecture that shapes a brighter future</h1>
@@ -21,7 +20,6 @@ description: An independent, community-led podcast, newsletter and global networ
     </div>
     <img class="hero-mark" src="{{ '/assets/images/logo-mark.svg' | relative_url }}" alt="" width="220" height="220">
   </div>
-  <div class="wrap hero-tools"><button type="button" class="hero-toggle" id="hero-toggle" aria-pressed="false" hidden>Light hero</button></div>
 </section>
 
 <section class="wrap block" aria-labelledby="latest-ep">
@@ -82,7 +80,6 @@ description: An independent, community-led podcast, newsletter and global networ
       {% for s in site.data.socials %}
       <li><a href="{{ s.url }}" rel="noopener"><strong>{{ s.title }}</strong></a></li>
       {% endfor %}
-      <li><a href="https://www.linkedin.com/groups/12351004/" rel="noopener"><strong>LinkedIn group</strong></a></li>
     </ul>
   </div>
 </section>

@@ -28,6 +28,6 @@ We’ve already had several fascinating [roundtable discussions](https://www.you
 
 **Get Started**
 
-To get involved with Architect Tomorrow, [subscribe to our YouTube channel](https://youtube.com/c/ArchitectTomorrow/) and join our [LinkedIn group](https://www.linkedin.com/groups/12351004/). We will also be welcoming the community at one of the upcoming roundtable discussions held across Europe.
+To get involved with Architect Tomorrow, [subscribe to our YouTube channel](https://youtube.com/c/ArchitectTomorrow/) and join our LinkedIn group (the group has since closed). We will also be welcoming the community at one of the upcoming roundtable discussions held across Europe.
 
-To find out more about our videos and events feel free to connect with the **#ArchitectTomorrow** community via the [LinkedIn group](https://www.linkedin.com/groups/12351004/)
+To find out more about our videos and events feel free to connect with the **#ArchitectTomorrow** community via the LinkedIn group (the group has since closed)

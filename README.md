@@ -2,7 +2,7 @@
 
 Source for the Architect Tomorrow podcast, newsletter and community website: a [Jekyll](https://jekyllrb.com/) 4 site, hosted on Cloudflare Pages, editable with [Siteleaf](https://www.siteleaf.com/) or any text editor.
 
-- Home page (green or light hero, switchable), [episodes](episodes/index.html), newsletter [articles](articles/index.html) (`_articles/`) and [archive](archive/index.html) (`_archive/`), [resources](resources/index.html) and [community](community/index.html) (about, get involved)
+- Home page (light hero; add `?hero=green` to preview the green one, kept for a future dark mode), [episodes](episodes/index.html), newsletter [articles](articles/index.html) (`_articles/`) and [archive](archive/index.html) (`_archive/`), [resources](resources/index.html) and [community](community/index.html) (about, get involved)
 - The original colour and logo experiments live at `/vibed-brand-playground/`
 
 ## Run it locally
@@ -51,4 +51,4 @@ Connect the repository in Siteleaf. It reads the collections in `_config.yml` (A
 - [YouTube channel](https://youtube.com/ArchitectTomorrow/)
 - [LinkedIn newsletter](https://www.linkedin.com/newsletters/architect-tomorrow-6864159042021949440/)
 - [Spotify](https://open.spotify.com/show/4QDEGzABgnQAsLep944Fsu) and [Apple Podcasts](https://podcasts.apple.com/us/podcast/architect-tomorrow/id1542490113)
-- [LinkedIn group](https://www.linkedin.com/groups/12351004/) and the hashtag #ArchitectTomorrow
+- [LinkedIn page](https://www.linkedin.com/company/architect-tomorrow/) and the hashtag #ArchitectTomorrow
