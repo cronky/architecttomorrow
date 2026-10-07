@@ -1,0 +1,147 @@
+<html>
+<head>
+  <title>Securing connected devices and stopping AI going bad?</title>
+  <style>
+    body {
+      margin: 0 auto;
+      width: 744px;
+      font-family: Source Serif Pro, serif;
+      line-height: 32px;
+      font-weight: 400;
+      color: rgba(0, 0, 0, 0.7);
+      font-size: 21px;
+    }
+    h1, h2, h3 {
+      font-family: Source Sans Pro, Helvetica, Arial, sans-serif;
+    }
+    h1 a, h1 a:visited {
+      color: inherit;
+      text-decoration: none;
+    }
+    h1 {
+      line-height: 48px;
+      font-weight: 600;
+      color: rgba(0, 0, 0, 0.85);
+      font-size: 42px;
+      margin: 32px 0 20px;
+    }
+    h2 {
+      line-height: 32px;
+      font-weight: 600;
+      color: rgba(0, 0, 0, 0.85);
+      font-size: 26px;
+      margin: 28px 0;
+    }
+    h3 {
+      line-height: 28px;
+      font-weight: 600;
+      color: rgba(0, 0, 0, 0.85);
+      font-size: 21px;
+      margin: 24px 0;
+    }
+    p {
+      margin: 32px 0;
+    }
+    .created, .published {
+      color: rgba(0, 0, 0, 0.55);
+      font-size: 15px;
+      line-height: 15px;
+      margin: 20px 0;
+    }
+    .created + .published {
+      margin-top: -12px;
+    }
+    blockquote {
+      font-family: Georgia, Source Serif Pro, serif;
+      font-style: italic;
+      font-size: 24px;
+      line-height: 36px;
+      margin: 48px 120px;
+      text-align: center;
+    }
+    a {
+      word-wrap: break-word;
+      outline: none;
+      text-decoration: none;
+      background-color: transparent;
+      border: 0;
+      color: #008CC9;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    a:visited {
+      color: #8C68CB;
+    }
+    .center {
+      text-align: center;
+    }
+    iframe {
+      display: block;
+      margin: 44px auto;
+    }
+    *:not(pre) + pre, pre:first-of-type {
+      margin-top: 32px;
+      padding-top: 32px;
+    }
+    pre:only-of-type {
+      margin: 32px 0;
+      padding: 32px;
+    }
+    pre {
+      background: #F3F6F8;
+      overflow-x: auto;
+      display: block;
+      font-size: 13px;
+      font-family: monospace;
+      line-height: 13px;
+      padding: 0 32px 32px;
+      white-space: pre;
+    }
+    a.embedded {
+      background: #F3F6F8;
+      display: block;
+      padding: 32px;
+      margin: 32px 0;
+    }
+    img {
+      height: auto;
+      max-width: 100%;
+    }
+    .slate-image-embed__resize-full-width img {
+      width: 100%;
+    }
+    .series-logo {
+      width: 48px;
+      height: 48px;
+      box-sizing: border-box;
+      background-clip: content-box;
+      border: 4px solid transparent;
+      border-radius: 6px;
+      object-fit: scale-down;
+      float: left;
+    }
+    .series-title {
+      font-size: 16px;
+      font-weight: 600;
+      vertical-align: top;
+    }
+    .series-description {
+      color: rgba(0,0,0,.6);
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+    }
+    div {
+      margin: 32px 0;
+    }
+  </style>
+</head>
+<body>
+    <img src="https://media.licdn.com/mediaC5612AQFg8iKU2YrCyQ" alt="Terminator Movie" title="Terminator Movie" />
+      <h1><a href="https://www.linkedin.com/pulse/securing-connected-devices-stopping-ai-going-bad-oliver-cronk">Securing connected devices and stopping AI going bad?</a></h1>
+    <p class="created">Created on 2015-09-24 21:07</p>
+  <p class="published">Published on 2015-09-24 21:14</p>
+  <div><p>As the explosion in connectivity, smart devices and AI continues to accelerate in pace - security as ever is a massive concern. Also it is&nbsp;potentially a blocker for adoption of the Internet of Things (IoT) and future applications of Artificial Intelligence and robotics. Just look at the news around connected cars being hacked (<a href="http://www.wired.com/2015/07/hackers-remotely-kill-jeep-highway/" target="_blank">the Jeep entertainment system in the states</a>) and worries that <a href="http://terminator.wikia.com/wiki/Skynet" target="_blank">Skynet</a> from the Terminator is in our medium term future!</p><p><strong>Update: </strong><a href="https://www.ted.com/talks/nick_bostrom_what_happens_when_our_computers_get_smarter_than_we_are?language=en" target="_blank"><strong>this is a fantastic TED talk on the topic of controlling Super Intelligent AI which is well worth a watch.</strong></a></p><p>So how could we easily secure IoT that we own in a seamless, robust and plug and play manner? Personal wearables and other IoT devices need to be secure by default and maybe (I stress maybe!) tied together with an evolution of <a href="http://oauth.net/2/" target="_blank">OAuth </a>(a standard used by websites to manage user identities) and <a href="http://www.techradar.com/news/phone-and-communications/what-is-nfc-and-why-is-it-in-your-phone-948410" target="_blank">NFC (Contactless type technology)</a>. I don't claim to have this fully nailed yet but it is something I am thinking about (and I am sure many others are too). Imagine your Smartphone as the hub of your identity (its generally signed in to at least one cloud identity like Google, Microsoft (or Apple - <a href="http://www.bbc.co.uk/news/technology-29039294" target="_blank">hmm perhaps&nbsp;not with the iCloud security issues</a>) and using NFC you can tap your watch, trainers, umbrella, whatever else you want to use your credentials. Want to logout out? Maybe thats a double tap or something with vibration feedback to tell you its logged out. Perhaps you also need to use a biometric - like the fingerprint sensor on the phone in addition to the NFC tap?</p><p>As for the connected car security&nbsp;issues&nbsp;- I think this is a classic case of the trusted "castle and moat" type approach that several organisations used to take on security. By this I mean that IT systems within the organisation boundary (protected&nbsp;by firewalls aka the castle walls / moat) was viewed to be trusted and secure. Car makers have probably cut corners and done the same thing. They've assumed the internal networks within the car are trusted and that no one would try and interfere with them. This arrogance is probably similar to the recent <a href="http://www.theregister.co.uk/2015/09/22/volkswagen_admits_11_million_cars_dieselgated/" target="_blank">VW dieselgate scandal</a>; "protected" by security by obscurity or <a href="https://www.eff.org/deeplinks/2015/09/researchers-could-have-uncovered-volkswagens-emissions-cheat-if-not-hindered-dmca" target="_blank">proprietary code that can't be independently reviewed</a>. Surely the immobiliser connected to the key concept could be re-used (i.e. to prevent the car being hacked when the owner is not around - i.e. it being unlocked). As for protecting it in motion that is probably mainly&nbsp;beefing up development to use more secure coding practises and not assume the car is in a trusted environment?</p><p>Another consideration is that some IoT&nbsp;applications could be argued to be community owned. For example&nbsp;Smart Lamp Posts, Connected street furniture, ibeacons - who will really own these? The council? Or the residents of the street to which it lives? How will we secure and manage these devices adequately? Imagine if we can enhance local community social networking (e.g. facebook) groups with validation of actual community membership - could we then use these to manage community hardware devices? Slightly out there I know - and not exactly a problem we are facing right now but I think a few years down the line we will be.</p><p>An even more off the wall idea on this is can we create a safety net to avoid doomsday Artificial Intelligence and robot type scenarios - i.e. the <a href="https://en.wikipedia.org/wiki/Open_Letter_on_Artificial_Intelligence" target="_blank">AI gone bad stuff that has been a hot topic recently</a>. This one is really interesting. Can we use community monitoring (more on this topic soon!),&nbsp;<a href="https://en.wikipedia.org/wiki/Complex_event_processing" target="_blank">event processing</a> and <a href="https://www.linkedin.com/pulse/future-collaboration-cloudy-oliver-cronk?trk=prof-post" target="_blank">machine learning</a> to detect anomalies and then use human feedback when exceptions are detected to determine whether something should be allowed or not? I guess this one falls down when its something that needs a real time sub millisecond response.&nbsp;"For example, a self-driving car may, in an emergency, have to decide between a small risk of a major accident and a large probability of a small accident" is an example of this. But could it prevent an Amazon delivery drone doing something bad? Or stop someone using their drone to stalk or spy on someone? Hard baking <a href="https://en.wikipedia.org/wiki/Three_Laws_of_Robotics" target="_blank">Asimovs laws</a> into the code (or perhaps even better the hardware) might be part of the solution as well?</p><p>I'll stop with my random brain dumping for now, more to come when time allows...!</p></div>
+</body>
+</html>
