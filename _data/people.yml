@@ -1,5 +1,6 @@
 # Community leads and regular guests, shown on /community/ (leads also on the home page).
 # group: lead | guest. Optional: role, bio, url (LinkedIn), photo (path under /assets/images/people/, square ~200px WebP).
+# Bios describe a specialism or industry, never an employer: people take part personally, and employers change.
 # Blank fields are simply not shown. Bios are short summaries of public descriptions: please check they are happy with them.
 - name: Oliver Cronk
   group: lead
@@ -23,16 +24,17 @@
 - name: Tom Fairbairn
   group: lead
   role: Integration Architecture Lead
-  bio: Long-time community member and Distinguished Engineer at Solace, working on event-driven integration.
+  bio: Long-time community member working in the integration software industry.
   url: https://www.linkedin.com/in/tomfairbairn/
 - name: Whynde Kuehn
   group: guest
-  bio: Founder of S2E Transformation, co-founder of the Business Architecture Guild and author of Strategy to Reality.
+  bio: Business architecture pioneer, educator and author of Strategy to Reality.
   url: https://www.linkedin.com/in/whynde-kuehn
 - name: Chris Lockhart
   group: guest
   bio: Host of the Consultants Saying Things podcast.
-  url: https://www.linkedin.com/in/ACoAAABb6A4B6Bfgr3O3JnrFYNVBjrqyKshAVKc # TODO replace with the vanity URL
+  url: https://www.linkedin.com/in/chrislockhart/
 - name: Chris Booth
   group: guest
-  # TODO add bio and LinkedIn url
+  url: https://www.linkedin.com/in/chatbotbooth/
+  # TODO add a short bio (describe the industry or specialism, not an employer)
