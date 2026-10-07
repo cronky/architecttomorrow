@@ -1,0 +1,15 @@
+{%- comment -%}
+  Click-to-load YouTube embed. Params: id (video) or list (playlist), title.
+  Nothing is requested from YouTube until the visitor presses play; without JS it is a normal link.
+{%- endcomment -%}
+{%- if include.id -%}
+  {%- assign embed = 'https://www.youtube-nocookie.com/embed/' | append: include.id | append: '?autoplay=1&rel=0' -%}
+  {%- assign link = 'https://www.youtube.com/watch?v=' | append: include.id -%}
+{%- else -%}
+  {%- assign embed = 'https://www.youtube-nocookie.com/embed/videoseries?autoplay=1&rel=0&list=' | append: include.list -%}
+  {%- assign link = 'https://www.youtube.com/playlist?list=' | append: include.list -%}
+{%- endif -%}
+<a class="video{% unless include.id %} video-plain{% endunless %}" href="{{ link }}" data-embed="{{ embed }}" data-title="{{ include.title | escape }}"{% if include.id %} style="background-image:url('https://i.ytimg.com/vi/{{ include.id }}/hqdefault.jpg')"{% endif %}>
+  <span class="play" aria-hidden="true"></span>
+  <span class="video-label">Play: {{ include.title | escape }}</span>
+</a>

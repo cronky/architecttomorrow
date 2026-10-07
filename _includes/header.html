@@ -1,0 +1,17 @@
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="{{ '/' | relative_url }}">
+      <img src="{{ '/assets/images/logo-mark.svg' | relative_url }}" alt="" width="36" height="36">
+      <span>Architect Tomorrow</span>
+    </a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="{{ '/episodes/' | relative_url }}"{% if page.section == 'episodes' %} aria-current="page"{% endif %}>Episodes</a></li>
+        <li><a href="{{ '/articles/' | relative_url }}"{% if page.section == 'articles' %} aria-current="page"{% endif %}>Articles</a></li>
+        <li><a href="{{ '/archive/' | relative_url }}"{% if page.section == 'archive' %} aria-current="page"{% endif %}>Archive</a></li>
+        <li><a class="cta" href="{% for s in site.data.socials %}{% if s.title contains 'Newsletter' %}{{ s.url }}{% endif %}{% endfor %}">Subscribe</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="brand-strip" aria-hidden="true"></div>
+</header>

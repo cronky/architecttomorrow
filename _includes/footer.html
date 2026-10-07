@@ -1,0 +1,28 @@
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <p class="foot-title">Architect Tomorrow</p>
+        <p>Independent by design. Honest, multidisciplinary and occasionally funny.</p>
+        <p class="small">Created by <a href="https://www.linkedin.com/in/cronky/" rel="noopener">Oliver Cronk</a>. Everyone who appears is a volunteer.</p>
+      </div>
+      <div>
+        <p class="foot-title">Find us</p>
+        <ul class="plain">
+          {% for s in site.data.socials %}<li><a href="{{ s.url }}" rel="noopener">{{ s.title }}</a></li>{% endfor %}
+          <li><a href="https://www.linkedin.com/groups/12351004/" rel="noopener">LinkedIn group</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="foot-title">Read</p>
+        <ul class="plain">
+          <li><a href="{{ '/articles/' | relative_url }}">Newsletter articles</a></li>
+          <li><a href="{{ '/archive/' | relative_url }}">Archive</a></li>
+          <li><a href="{{ '/feed.xml' | relative_url }}">RSS feed</a></li>
+          <li><a href="{{ '/vibed-brand-playground/' | relative_url }}">Brand playground</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="small copy">&copy; {{ 'now' | date: '%Y' }} Architect Tomorrow. Views are those of the contributors.</p>
+  </div>
+</footer>

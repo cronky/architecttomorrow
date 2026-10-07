@@ -1,0 +1,35 @@
+---
+title: "Architect Tomorrow turns 5!"
+date: 2025-02-28 11:15:00 +0000
+excerpt: "Next month (March 2025) the #ArchitectTomorrow podcast & community turns 5 years old! To commemorate this, I have finally pulled together a playlist for all the full episodes on YouTube where it all…"
+linkedin_url: https://www.linkedin.com/pulse/architect-tomorrow-turns-5-oliver-cronk-yfuhe
+---
+Next month (March 2025) the **#ArchitectTomorrow** podcast & community turns 5 years old! To commemorate this, I have finally pulled together a [playlist for all the full episodes](https://www.youtube.com/playlist?list=PLu1Byoup02RbIKEeNSCAJcN4R7Uxb9paP) on YouTube where it all started:
+
+[Embedded LinkedIn content: view it on the original article](https://www.linkedin.com/pulse/architect-tomorrow-turns-5-oliver-cronk-yfuhe)
+
+> [Perplexity.ai beautifully and boldly (with some confabulation later on)](https://www.perplexity.ai/search/can-you-give-me-a-full-list-of-D2bhJA8RR2GBEPy1lK_M7g) states: "The *Architect Tomorrow* podcast, hosted by Oliver Cronk, has established itself as a leading platform for exploring the intersection of technology, sustainability, business strategy, and architectural innovation. With a focus on practical insights from industry leaders, the podcast delves into emerging trends, ethical considerations in tech, and the systemic challenges of building sustainable digital futures."
+
+There are 57 full episodes (110 videos including shorter clips), mostly featuring groups of people from the community; quite a few recorded online, others out and about, including conferences like [Green IO 🎙️](https://www.linkedin.com/company/greenio/) most recently). early on this was my close network of former colleagues and friends, and then expanded globally. Whilst I cringe at some of the oldest ones as the production values aren't great (and I am still learning to facilitate) and my family love to wind me up about them, I am proud of what we've achieved as a community. The first episodes were about helping each other cope with the [challenges of COVID](https://www.linkedin.com/feed/update/urn:li:ugcPost:6646413847055998976/) as architects under pressure in our organisations. The subject matter quickly moved on to emerging and trending tech (I have come to accept the episodes won't be evergreen like **Christopher Lockhart**'s **Consultants Saying Things**) and [career journeys](https://www.youtube.com/playlist?list=PLu1Byoup02RbdoGr8s9yjVXOPFS7b_ZiT). I like to hope there is something on the podcast for everyone, but I am always interested in new ideas and new members of the community being featured.
+
+There is still content on the cutting room floor - like my trip to the US last June including the IEEE conference - that sadly probably won't see the light of day. Once it gets to a certain point I feel it's too out of date to share. Some of the in person / on location content didn't always go to plan and didn't record properly. Sorry [Connie Ryan](https://www.linkedin.com/in/ACoAAAQoFccBwHKAnCsvXABqmk4OpjcqY7fyJZc) and [Qrypt](https://www.linkedin.com/company/qrypt-inc/) - one day I hope to salvage something from our recording in New York - in the mean time there are the [excellent beyond the](https://blog.scottlogic.com/2023/04/03/beyond-the-hype-y2q-the-end-of-encryption-as-we-know-it.html) hype [audio recordings we did](https://blog.scottlogic.com/2023/03/13/beyond-the-hype-quantum-computing-part-one.html) instead. Also apologies to [Penny Townsend](https://www.linkedin.com/in/pennytownsendsfdc) half of an episode we recorded on predictions didn't go out - and as a result I've stopped doing the annual predictions content (partly as [Chief Disruptor](https://www.linkedin.com/company/chiefdisruptor/) do a great job of that). Although one day I look forward to watching them and seeing what we got right and wrong.
+
+### Pause in videos but blogs and other content is out there.
+
+Recently there has been a pause in episodes (but the [LinkedIn newsletters](https://www.linkedin.com/newsletters/architect-tomorrow-6864159042021949440/) - do sub!) and posts continue, and I've been guest on quite a few podcasts and speaking at recorded conferences so I feel people see enough of me!); the plan is to get more community content recorded and put out later in the year.
+
+## Thank yous
+
+Massive thanks to everyone who has been a guest (everyone has been a volunteer as I don't make any money out of this; it's a passion side project), recommended/referred someone to appear, or helped by liking, commenting, and sharing. AT was never about going viral (the most successful episode has about 10K views across different podcast platforms - as you probably guessed it's on an AI-related topic!), but about impacting the right people and giving every architect (and related disclipines) from any background a platform to showcase their experience and insight.
+
+Big thanks also to other [Architect] networks like **Iasa Global**, **Chief Architect Network**, **BCS, The Chartered Institute for IT**, **Intersection Group**, [Chief Disruptor](https://www.linkedin.com/company/chiefdisruptor/) **Paul Preiss**, **Darryl Carr**, **Grant Ecker**, **Whynde Kuehn**, **Lisa Woodall**, **Sally V Pritchard**, **Tom Fairbairn**, **Solace**, [Konvergent](https://www.linkedin.com/company/konvergent-ltd/) (and many others I have probably forgotten sorry) Scott Logic, and of course **Tanium** (**Tony Larks**, **Christopher Hodson,** [Ryan Nappi](https://www.linkedin.com/in/ryannappi)) where [it all started](https://www.tanium.com/blog/architect-tomorrow/) - for collaboration and support.
+
+## What's next?
+
+One of my longer term goals has always been to make Architect Tomorrow less dependent and more decoupled (look there is the architect speaking!) from me. However doing so in a way that it remain independent and doesn't have a hidden agenda. This, as it turns out is pretty hard. Content will continue whilst I still enjoying learning in public and having interesting conversations (which hopefully isn't anytime soon!) perhaps once GenAI stops confabulating so much I'll be able to create ArchitectTomorrow AI Agents that help run things...?!
+
+In terms of topics pragmatic Sustainability has been a long term theme (one of the topics many of you who know me well will know I am passionate about) and will continue to be so until I believe it's become as well understood and adopted as Security (the other common topic).
+
+As always, please do subscribe to the [Architect Tomorrow](https://www.youtube.com/@ArchitectTomorrow) YouTube: <https://www.youtube.com/@ArchitectTomorrow>
+
+This is at over 1000 subs while [the newsletter](https://www.linkedin.com/newsletters/architect-tomorrow-6864159042021949440/) is at about 2600 (only about half of which overlap with my personal profile). Total reach through 2nd and 3rd degree connections that view and comment is much larger - with posts getting between 1,500 and 22K views as a result (which I don't think is to bad for organic unpaid presence?!)
