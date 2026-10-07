@@ -36,7 +36,7 @@ description: An independent, community-led podcast, newsletter and global networ
     <ul class="cards">
       {% for e in episodes limit:3 offset:1 %}
       <li class="card">
-        <a class="thumb" href="https://www.youtube.com/watch?v={{ e.id }}" rel="noopener" tabindex="-1" aria-hidden="true"><img src="https://i.ytimg.com/vi/{{ e.id }}/mqdefault.jpg" alt="" width="320" height="180" loading="lazy"></a>
+        <a class="thumb" href="https://www.youtube.com/watch?v={{ e.id }}" rel="noopener" tabindex="-1" aria-hidden="true"><img src="{{ '/assets/images/episodes/' | append: e.id | append: '.jpg' | relative_url }}" alt="" width="320" height="180" loading="lazy"></a>
         <h3><a href="https://www.youtube.com/watch?v={{ e.id }}" rel="noopener">{{ e.title | escape }}</a></h3>
         <p class="meta"><time datetime="{{ e.date }}">{{ e.date | date: '%-d %B %Y' }}</time></p>
       </li>
@@ -54,6 +54,21 @@ description: An independent, community-led podcast, newsletter and global networ
   {% endif %}
 </section>
 
+<section class="wrap block" aria-labelledby="latest-res">
+  <div class="head"><h2 id="latest-res">Latest resources</h2><a href="{{ '/resources/' | relative_url }}">All resources</a></div>
+  <ul class="cards">
+    {% assign recent = site.data.library.notable | sort: 'date' | reverse %}
+    {% for r in recent limit:3 %}
+    <li class="card">
+      {% if r.image %}<a class="thumb thumb-light" href="{{ r.url | relative_url }}" tabindex="-1" aria-hidden="true"><img src="{{ r.image | relative_url }}" alt="" width="400" height="246" loading="lazy"></a>{% endif %}
+      <p class="meta">{{ r.date | date: '%B %Y' }}</p>
+      <h3><a href="{% if r.url contains '://' %}{{ r.url }}{% else %}{{ r.url | relative_url }}{% endif %}">{{ r.title | escape }}</a></h3>
+      <p>{{ r.description | truncate: 150 }}</p>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+
 <section class="wrap block" aria-labelledby="latest-art">
   <div class="head"><h2 id="latest-art">Latest newsletter articles</h2><a href="{{ '/articles/' | relative_url }}">All articles</a></div>
   <ul class="cards">
@@ -69,7 +84,7 @@ description: An independent, community-led podcast, newsletter and global networ
 
 <section class="wrap block" aria-labelledby="people">
   <div class="head"><h2 id="people">Meet the community</h2><a href="{{ '/community/' | relative_url }}">About the community</a></div>
-  {% include people.html %}
+  {% include people.html group="lead" %}
 </section>
 
 <section class="band" aria-labelledby="join">

@@ -1,20 +1,38 @@
-# Community leads and regular voices, shown on /community/ and the home page.
-# Optional fields: role, bio, url (LinkedIn), photo (path under /assets/images/people/, square, ~200px WebP).
-# Blank fields are simply not shown.
+# Community leads and regular guests, shown on /community/ (leads also on the home page).
+# group: lead | guest. Optional: role, bio, url (LinkedIn), photo (path under /assets/images/people/, square ~200px WebP).
+# Blank fields are simply not shown. Bios are short summaries of public descriptions: please check they are happy with them.
 - name: Oliver Cronk
+  group: lead
   role: Founder, community lead and Europe lead
   bio: Started Architect Tomorrow at the end of 2019 and hosts the podcast and newsletter.
   url: https://www.linkedin.com/in/cronky/
 - name: Selena Evans
+  group: lead
   role: US lead and regular co-host
   bio: Attorney and certified business architect, based in the USA.
   url: https://www.linkedin.com/in/selena-evans-jd
 - name: Darryl Carr
+  group: lead
   role: Australia lead and regular co-host
   bio: Enterprise architecture leader, based in Australia.
   url: https://www.linkedin.com/in/darrylcarr
-- name: Tom Fairbairn
-  bio: Long-time member of the Architect Tomorrow community.
-  url: https://www.linkedin.com/in/tomfairbairn/
 - name: Kenneth Igiri
+  group: lead
   role: Africa lead
+  bio: Enterprise architect working in African financial services. # TODO confirm bio and add LinkedIn url
+- name: Tom Fairbairn
+  group: lead
+  role: Integration Architecture Lead
+  bio: Long-time community member and Distinguished Engineer at Solace, working on event-driven integration.
+  url: https://www.linkedin.com/in/tomfairbairn/
+- name: Whynde Kuehn
+  group: guest
+  bio: Founder of S2E Transformation, co-founder of the Business Architecture Guild and author of Strategy to Reality.
+  url: https://www.linkedin.com/in/whynde-kuehn
+- name: Chris Lockhart
+  group: guest
+  bio: Host of the Consultants Saying Things podcast.
+  url: https://www.linkedin.com/in/ACoAAABb6A4B6Bfgr3O3JnrFYNVBjrqyKshAVKc # TODO replace with the vanity URL
+- name: Chris Booth
+  group: guest
+  # TODO add bio and LinkedIn url

@@ -11,7 +11,7 @@ description: Every full episode of the Architect Tomorrow podcast, with links to
   <ul class="cards cards-wide">
     {% for e in site.data.episodes %}
     <li class="card">
-      <a class="thumb" href="https://www.youtube.com/watch?v={{ e.id }}" rel="noopener" tabindex="-1" aria-hidden="true"><img src="https://i.ytimg.com/vi/{{ e.id }}/mqdefault.jpg" alt="" width="320" height="180" loading="lazy"></a>
+      <a class="thumb" href="https://www.youtube.com/watch?v={{ e.id }}" rel="noopener" tabindex="-1" aria-hidden="true"><img src="{{ '/assets/images/episodes/' | append: e.id | append: '.jpg' | relative_url }}" alt="" width="320" height="180" loading="lazy"></a>
       <h2 class="h3"><a href="https://www.youtube.com/watch?v={{ e.id }}" rel="noopener">{{ e.title | escape }}</a></h2>
       <p class="meta"><time datetime="{{ e.date }}">{{ e.date | date: '%-d %B %Y' }}</time></p>
     </li>

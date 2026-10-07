@@ -25,7 +25,7 @@ description: Reference architectures, diagrams and notable articles from the Arc
   <ul class="cards cards-wide">
     {% for d in lib.diagrams %}
     <li class="card">
-      <a class="thumb thumb-light" href="{{ d.image | relative_url }}"><img src="{{ d.image | relative_url }}" alt="{{ d.alt | escape }}" loading="lazy"></a>
+      <a class="thumb thumb-light thumb-contain" href="{{ d.image | relative_url }}"><img src="{{ d.image | relative_url }}" alt="{{ d.alt | escape }}" loading="lazy"></a>
       <h3>{{ d.title | escape }}</h3>
       <p>{{ d.description }}</p>
       <p class="small"><a href="{{ d.image | relative_url }}">Open full size</a>{% if d.page %} &middot; <a href="{{ d.page | relative_url }}">Read the article</a>{% endif %}</p>

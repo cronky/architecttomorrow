@@ -9,7 +9,7 @@
   {%- assign embed = 'https://www.youtube-nocookie.com/embed/videoseries?autoplay=1&rel=0&list=' | append: include.list -%}
   {%- assign link = 'https://www.youtube.com/playlist?list=' | append: include.list -%}
 {%- endif -%}
-<a class="video{% unless include.id %} video-plain{% endunless %}" href="{{ link }}" data-embed="{{ embed }}" data-title="{{ include.title | escape }}"{% if include.id %} style="background-image:url('https://i.ytimg.com/vi/{{ include.id }}/hqdefault.jpg')"{% endif %}>
+<a class="video{% unless include.id %} video-plain{% endunless %}" href="{{ link }}" data-embed="{{ embed }}" data-title="{{ include.title | escape }}"{% if include.id %} style="background-image:url('{{ '/assets/images/episodes/' | append: include.id | append: '.jpg' | relative_url }}')"{% endif %}>
   <span class="play" aria-hidden="true"></span>
   <span class="video-label">Play: {{ include.title | escape }}</span>
 </a>
