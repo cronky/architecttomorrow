@@ -1,0 +1,17 @@
+# Community leads and regular voices, shown on /community/ and the home page.
+# Optional fields: role, bio, url (LinkedIn), photo (path under /assets/images/people/, square, ~200px WebP).
+# Roles are left blank for everyone except Oliver: add e.g. "Co-host" where it applies. Blank fields are simply not shown.
+- name: Oliver Cronk
+  role: Founder and community lead
+  bio: Started Architect Tomorrow in 2019 and hosts the podcast and newsletter.
+  url: https://www.linkedin.com/in/cronky/
+- name: Selena Evans
+  bio: Attorney and certified business architect, based in the USA.
+  url: https://www.linkedin.com/in/selena-evans-jd
+- name: Darryl Carr
+  bio: Enterprise architecture leader, based in Australia.
+  url: https://www.linkedin.com/in/darrylcarr
+- name: Tom Fairbairn
+  bio: Long-time member of the Architect Tomorrow community.
+  url: https://www.linkedin.com/in/tomfairbairn/
+- name: Kenneth Igiri

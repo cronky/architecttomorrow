@@ -8,6 +8,8 @@
       <ul>
         <li><a href="{{ '/episodes/' | relative_url }}"{% if page.section == 'episodes' %} aria-current="page"{% endif %}>Episodes</a></li>
         <li><a href="{{ '/articles/' | relative_url }}"{% if page.section == 'articles' %} aria-current="page"{% endif %}>Articles</a></li>
+        <li><a href="{{ '/resources/' | relative_url }}"{% if page.section == 'resources' %} aria-current="page"{% endif %}>Resources</a></li>
+        <li><a href="{{ '/community/' | relative_url }}"{% if page.section == 'community' %} aria-current="page"{% endif %}>Community</a></li>
         <li><a href="{{ '/archive/' | relative_url }}"{% if page.section == 'archive' %} aria-current="page"{% endif %}>Archive</a></li>
         <li><a class="cta" href="{% for s in site.data.socials %}{% if s.title contains 'Newsletter' %}{{ s.url }}{% endif %}{% endfor %}">Subscribe</a></li>
       </ul>

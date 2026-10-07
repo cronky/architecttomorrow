@@ -1,0 +1,20 @@
+# Content for /resources/. Add items to any list; empty lists show a "coming soon" note.
+reference_architecture: []
+# Diagrams: image is a path under /assets/images/, page is optional (link to the article that explains it)
+diagrams:
+  - title: AI sleepwalking risks (v2)
+    description: Nine sleepwalking risks split into enterprise and personal, with the critical channel where asymmetrical overload becomes confirmation fatigue.
+    image: /assets/images/sleepwalkingrisksv2.svg
+    alt: Diagram of nine AI sleepwalking risks, split into enterprise and personal categories
+    page: /articles/2026/ai-sleepwalking-risks-v2-including-automation-fallacies/
+# Notable articles: url is a site path or full URL
+notable:
+  - title: AI Sleepwalking Risks V2, including Automation Fallacies
+    description: The 2026 update, with the diagram and the fallacies that drive the risks.
+    url: /articles/2026/ai-sleepwalking-risks-v2-including-automation-fallacies/
+  - title: Are we sleepwalking into tomorrow's AI challenges?
+    description: The original 2025 article that started the thread.
+    url: /articles/2025/are-we-sleepwalking-into-tomorrow-s-ai-challenges/
+  # - title: Regenerative Architecture Principles
+  #   description: TODO add the link or paste the article into _articles/
+  #   url:

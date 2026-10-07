@@ -53,6 +53,35 @@ h3,.h3{font-size:1.15rem}
 .btn-ghost:hover{background:#fff;color:var(--g900)}
 @media(min-width:760px){.hero-grid{grid-template-columns:1fr 14rem}.hero-mark{display:block;width:14rem;height:auto;justify-self:end;opacity:.95}}
 
+/* hero tools and light variant */
+.hero-tools{display:flex;justify-content:flex-end;margin-top:1.5rem}
+.hero-toggle{font:inherit;font-size:.85rem;background:none;color:inherit;border:1px solid currentColor;border-radius:2rem;padding:.2rem .8rem;opacity:.85;cursor:pointer}
+.hero-toggle:hover{opacity:1}
+.hero[data-theme=light]{background:#fff;color:var(--ink);border-bottom:1px solid var(--line)}
+.hero[data-theme=light] h1{color:var(--g900)}
+.hero[data-theme=light] a{color:var(--g700)}
+.hero[data-theme=light] .btn-primary,.hero[data-theme=light] .btn-primary:hover{background:var(--g800);color:#fff}
+.hero[data-theme=light] .btn-primary:hover{background:var(--g900)}
+.hero[data-theme=light] .btn-ghost{border-color:var(--g800);color:var(--g800)}
+.hero[data-theme=light] .btn-ghost:hover{background:var(--g800);color:#fff}
+.hero[data-theme=light] .hero-mark{background:linear-gradient(135deg,#0f5232,#a1c651);border-radius:1.75rem;padding:1.6rem}
+.hero[data-theme=light] :focus-visible{outline-color:#0a58ca}
+
+/* people, resources */
+.people{list-style:none;margin:1rem 0 0;padding:0;display:grid;gap:1.25rem;grid-template-columns:repeat(auto-fill,minmax(16rem,1fr))}
+.person{display:flex;gap:1rem;align-items:flex-start;border:1px solid var(--line);border-radius:.6rem;padding:1rem 1.1rem}
+.person h3{margin:0 0 .15rem;font-size:1.1rem}
+.person p{margin:0;font-family:var(--font);font-size:.95rem;line-height:1.5}
+.person .role{color:var(--g700);font-weight:600}
+.person .bio{color:var(--muted);margin-top:.3rem}
+.avatar{flex:none;display:grid;place-items:center;width:3.5rem;height:3.5rem;border-radius:50%;background:linear-gradient(135deg,#0f5232,#6a9a3f);color:#fff;font-weight:700;letter-spacing:.02em;object-fit:cover}
+.block-tight{padding-bottom:1rem}
+.thumb-light{background:#fff;border-bottom:1px solid var(--line);aspect-ratio:1400/860}
+.prose .card p,.prose .card h3,.prose .actions-plain,.prose .person p{font-family:var(--font);font-size:1rem;line-height:1.6}
+.prose .card h3{font-size:1.15rem}
+.thumb-light img{object-fit:contain}
+.actions-plain a{font-weight:600}
+
 /* sections */
 .block{padding:clamp(2rem,5vw,3.5rem) 0 0}
 .head{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;margin-bottom:1rem}

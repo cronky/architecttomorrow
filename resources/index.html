@@ -1,0 +1,46 @@
+---
+layout: default
+title: Resources
+section: resources
+description: Reference architectures, diagrams and notable articles from the Architect Tomorrow community.
+---
+{% assign lib = site.data.library %}
+<div class="wrap prose">
+  <h1>Resources</h1>
+  <p class="lead">Practical material from the community. Jump to <a href="#reference-architecture">reference architecture</a>, <a href="#diagrams">diagrams</a> or <a href="#notable-articles">notable articles</a>.</p>
+
+  <h2 id="reference-architecture">Reference architecture</h2>
+  {% if lib.reference_architecture and lib.reference_architecture.size > 0 %}
+  <ul class="list">
+    {% for r in lib.reference_architecture %}
+    <li><a href="{% if r.url contains '://' %}{{ r.url }}{% else %}{{ r.url | relative_url }}{% endif %}">{{ r.title | escape }}</a>{% if r.description %}<span class="ex">{{ r.description }}</span>{% endif %}</li>
+    {% endfor %}
+  </ul>
+  {% else %}
+  <p class="note">Reference architectures are on their way. Have one you would like to share? <a href="{{ '/community/get-involved/' | relative_url }}">Get involved</a>.</p>
+  {% endif %}
+
+  <h2 id="diagrams">Diagrams</h2>
+  {% if lib.diagrams and lib.diagrams.size > 0 %}
+  <ul class="cards cards-wide">
+    {% for d in lib.diagrams %}
+    <li class="card">
+      <a class="thumb thumb-light" href="{{ d.image | relative_url }}"><img src="{{ d.image | relative_url }}" alt="{{ d.alt | escape }}" loading="lazy"></a>
+      <h3>{{ d.title | escape }}</h3>
+      <p>{{ d.description }}</p>
+      <p class="small"><a href="{{ d.image | relative_url }}">Open full size</a>{% if d.page %} &middot; <a href="{{ d.page | relative_url }}">Read the article</a>{% endif %}</p>
+    </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+  <p class="note">Diagrams coming soon.</p>
+  {% endif %}
+
+  <h2 id="notable-articles">Notable articles</h2>
+  <ul class="list">
+    {% for n in lib.notable %}
+    <li><a href="{% if n.url contains '://' %}{{ n.url }}{% else %}{{ n.url | relative_url }}{% endif %}">{{ n.title | escape }}</a>{% if n.description %}<span class="ex">{{ n.description }}</span>{% endif %}</li>
+    {% endfor %}
+  </ul>
+  <p>More in the <a href="{{ '/articles/' | relative_url }}">newsletter articles</a> and the <a href="{{ '/archive/' | relative_url }}">archive</a>.</p>
+</div>

@@ -2,7 +2,7 @@
 
 Source for the Architect Tomorrow podcast, newsletter and community website: a [Jekyll](https://jekyllrb.com/) 4 site, hosted on Cloudflare Pages, editable with [Siteleaf](https://www.siteleaf.com/) or any text editor.
 
-- Home page, [episodes](episodes/index.html), newsletter [articles](articles/index.html) (`_articles/`) and [archive](archive/index.html) (`_archive/`)
+- Home page (green or light hero, switchable), [episodes](episodes/index.html), newsletter [articles](articles/index.html) (`_articles/`) and [archive](archive/index.html) (`_archive/`), [resources](resources/index.html) and [community](community/index.html) (about, get involved)
 - The original colour and logo experiments live at `/vibed-brand-playground/`
 
 ## Run it locally
@@ -43,6 +43,8 @@ Connect the repository in Siteleaf. It reads the collections in `_config.yml` (A
 | Add an article | New file in `_articles/` named `YYYY-MM-DD-slug.md` with `title`, `date`, `excerpt` and optionally `linkedin_url` front matter |
 | Re-import the LinkedIn exports in `sourcematerial/` | `pip install beautifulsoup4 lxml markdownify` then `python3 scripts/import_linkedin.py` (overwrites `_articles/` and `_archive/`) |
 | Download article images locally (smaller, no expiring links) | `pip install pillow` then `python3 scripts/localise_images.py` |
+| Edit community leads | `_data/people.yml` (optional `role`, `bio`, `url`, `photo`) |
+| Add resources, diagrams or notable articles | `_data/library.yml`; shown on `/resources/` |
 | Refresh podcast episodes | `python3 scripts/update_episodes.py`, or let `.github/workflows/update-episodes.yml` do it weekly |
 
 ## Where can you find Architect Tomorrow?
