@@ -12,6 +12,19 @@ diagrams:
     image: /assets/images/sleepwalkingrisksv2.svg
     alt: Diagram of nine AI sleepwalking risks, split into enterprise and personal categories
     page: /articles/2026/ai-sleepwalking-risks-v2-including-automation-fallacies/
+  # From the archive (2020). file is an optional download (PDF) linked instead of the full-size image.
+  - title: Enterprise technology and tech management capabilities (2020)
+    description: A one-page technology capability view of enterprise IT (v1.8 beta, July 2020). It maps the capabilities that serve customers and users across channels, from data centres, networks, cloud, middleware, data and end-user computing to IoT and operational technology, with IT service management (IT4IT value streams such as Strategy to Portfolio and Detect to Correct), security, risk and supplier management alongside. Produced with Tanium, whose platform coverage is shaded on the map. CC BY-SA.
+    image: /assets/images/enterprise-technology-capabilities-2020.webp
+    alt: Dense capability map of enterprise technology, grouping boxes such as Data Centres, Cloud Management, Middleware, End User Computing, IT Service Management and Security, with a customer and channels circle in the top right
+    file: /assets/docs/IT-Architecture-2020.pdf
+    file_label: Download the PDF (1 page, 0.5 MB)
+  - title: "Virtual relay workshop: mapping the new realities of business and technology (2020)"
+    description: Output from the community's online workshop on 24 May 2020, where three groups rotated around three topics, building on each other's mind maps to explore how priorities were shifting after COVID-19. Covers people and culture (remote working, wellbeing, climate), ecosystems and business strategy (broken supply chains, forced digitalisation, new operating models) and technology and architecture (cloud, privacy tech, automation, the end of "castle and moat" security). Moderated by Sally Pritchard, Chris Lockhart and Oliver Cronk. CC BY-SA.
+    image: /assets/images/virtual-relay-workshop-2020.webp
+    alt: Mind map asking which technologies are being leveraged and which digital transformations are accelerating, with branches for cloud, decentralisation, data and AI, automation, e-commerce, distributed workforce and sustainability
+    file: /assets/docs/Virtual-Relay-Workshop-2020.pdf
+    file_label: Download the PDF (4 pages, 1.2 MB)
 # Notable articles: url is a site path or full URL. date (for ordering on the home page) and image are optional/needed respectively.
 notable:
   - title: Regenerative Architecture Principles

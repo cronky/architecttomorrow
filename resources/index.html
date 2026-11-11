@@ -24,11 +24,12 @@ description: Reference architectures, diagrams and notable articles from the Arc
   {% if lib.diagrams and lib.diagrams.size > 0 %}
   <ul class="cards cards-wide">
     {% for d in lib.diagrams %}
+    {% assign target = d.file | default: d.image %}
     <li class="card">
-      <a class="thumb thumb-light thumb-contain" href="{{ d.image | relative_url }}"><img src="{{ d.image | relative_url }}" alt="{{ d.alt | escape }}" loading="lazy"></a>
+      <a class="thumb thumb-light thumb-contain" href="{{ target | relative_url }}"><img src="{{ d.image | relative_url }}" alt="{{ d.alt | escape }}" loading="lazy"></a>
       <h3>{{ d.title | escape }}</h3>
       <p>{{ d.description }}</p>
-      <p class="small"><a href="{{ d.image | relative_url }}">Open full size</a>{% if d.page %} &middot; <a href="{{ d.page | relative_url }}">Read the article</a>{% endif %}</p>
+      <p class="small"><a href="{{ target | relative_url }}">{% if d.file %}{{ d.file_label | default: 'Download the PDF' }}{% else %}Open full size{% endif %}</a>{% if d.page %} &middot; <a href="{{ d.page | relative_url }}">Read the article</a>{% endif %}</p>
     </li>
     {% endfor %}
   </ul>
