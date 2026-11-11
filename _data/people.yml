@@ -1,12 +1,12 @@
 # Community leads and regular guests, shown on /community/ (leads also on the home page).
-# group: lead | guest. Optional: role, bio, url (LinkedIn), photo (path under /assets/images/people/, square ~200px WebP).
+# group: lead | guest. Optional: role, bio, url (LinkedIn or personal site), photo (path under /assets/images/people/, square ~200px WebP).
 # Bios describe a specialism or industry, never an employer: people take part personally, and employers change.
 # Blank fields are simply not shown. Bios are short summaries of public descriptions: please check they are happy with them.
 - name: Oliver Cronk
   group: lead
   role: Founder, community lead and Europe lead
   bio: Started Architect Tomorrow at the end of 2019 and hosts the podcast and newsletter.
-  url: https://www.linkedin.com/in/cronky/
+  url: https://www.cronky.net/
 - name: Selena Evans
   group: lead
   role: US lead and regular co-host
