@@ -34,8 +34,7 @@
 - name: Lisa Woodall
   group: guest
   bio: Enterprise architect, transformation strategist and author of Whatever Next? Making Transformation Stick. # TODO confirm bio
-  # LinkedIn member-ID link from the newsletter export; swap for her vanity URL if known
-  url: https://www.linkedin.com/in/ACoAAADlMnoBD9oAp32mOYDvikagJWnf8mFppYk
+  url: https://www.linkedin.com/in/lisa-woodall-6220445/
 - name: Chris Lockhart
   group: guest
   bio: Host of the Consultants Saying Things podcast.
@@ -43,11 +42,11 @@
 - name: Sally V Pritchard
   group: guest
   bio: A regular on our annual tech trends panels, and co-moderator of the 2020 virtual relay workshop. # TODO confirm bio (ideally her specialism)
-  # LinkedIn member-ID link from the newsletter export; swap for her vanity URL if known
-  url: https://www.linkedin.com/in/ACoAAAcfIJQB7UiMCggHK02WfaWf3btUzofjeiI
+  url: https://www.linkedin.com/in/sally-v-pritchard-95801b34/
 - name: Grant Ecker
   group: guest
-  bio: Enterprise architecture leader and founder of the Chief Architect Network, a peer community for chief architects. # TODO confirm bio and add LinkedIn url
+  bio: Enterprise architecture leader and founder of the Chief Architect Network, a peer community for chief architects. # TODO confirm bio
+  url: https://www.linkedin.com/in/grantecker/
 - name: Chris Booth
   group: guest
   url: https://www.linkedin.com/in/chatbotbooth/
