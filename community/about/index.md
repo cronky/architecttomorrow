@@ -54,7 +54,7 @@ We are committed to ensuring under-represented groups working in tech are visibl
 
 ## Who leads it?
 
-Meet the [community leads]({{ '/community/' | relative_url }}), who look after Europe, the US, Australia and Africa.
+Meet the [community leads]({{ '/community/' | relative_url }}), who look after Europe, the US, Australia and Africa. Oliver's talks and appearances beyond Architect Tomorrow are listed on [cronky.net](https://cronky.net/speaking/).
 
 ## Want to take part?
 

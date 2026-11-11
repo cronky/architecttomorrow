@@ -54,7 +54,7 @@ description: Reference architectures, diagrams and notable articles from the Arc
   {% endif %}
 
   {% if lib.approaches and lib.approaches.size > 0 %}
-  <h2 id="approaches">Approaches</h2>
+  <h2 id="approaches">Approaches and frameworks</h2>
   <ul class="list">
     {% for a in lib.approaches %}
     <li><a href="{% if a.url contains '://' %}{{ a.url }}{% else %}{{ a.url | relative_url }}{% endif %}"{% if a.url contains '://' %} rel="noopener"{% endif %}>{{ a.title | escape }}</a>{% if a.description %}<span class="ex">{{ a.description }}</span>{% endif %}</li>
