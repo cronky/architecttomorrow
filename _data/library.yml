@@ -1,5 +1,20 @@
 # Content for /resources/. Add items to any list; empty lists show a "coming soon" note.
-reference_architecture: []
+# Reference architecture: items with an image show as cards (like diagrams), the rest as a list.
+reference_architecture:
+  - title: A reference architecture for consequential AI
+    description: A pragmatic, opinionated reference architecture for generative and agentic AI where getting it wrong has serious consequences. Separates the harness, the context plane and the action plane, and places a "judgement line" above which a named human owns the output. By Oliver Cronk on Cronk Advisory, October 2026.
+    url: https://www.cronkadvisory.com/articles/reference-architecture-consequential-ai/
+  - title: Human vs technology capabilities
+    description: The context stack and the judgement line, after Ackoff and Zeleny. Technology-led capabilities (infrastructure, data, information, knowledge) sit below the line. Human capabilities (judgement, empathy, wisdom, accountability, trusted relationships) sit above it, where a named human owns the output. Each band is paired with its risk and governance needs, from controls and provenance up to decision rights and assurance.
+    image: /assets/images/context-stack-judgement-line.webp
+    alt: "Stack diagram: infrastructure, data, information and knowledge as technology-led capabilities below a dashed judgement line; judgement, empathy, wisdom, accountability and trusted relationships as human capabilities above it; with controls, quality and provenance, decision rights and assurance alongside"
+    url: https://www.cronkadvisory.com/articles/reference-architecture-consequential-ai/
+    link_label: Read the reference architecture
+# Approaches and frameworks: url is a site path or full URL.
+approaches:
+  - title: Pragmatic Ecosystems
+    description: Pragmatic systems thinking for architecture decisions. Instead of putting your organisation at the centre, it sits on a stack of business ecosystem, economy, society and biosphere, so you can ask what you rely on and what you affect. Includes an interactive map by sector. From Cronk Advisory.
+    url: https://www.cronkadvisory.com/approach/
 # Diagrams: image is a path under /assets/images/, page is optional (link to the article that explains it)
 diagrams:
   - title: "Architecture is not neutral: twelve shifts from extractive to regenerative"

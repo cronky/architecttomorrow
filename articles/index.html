@@ -8,6 +8,7 @@ description: Architect Tomorrow newsletter articles on AI, sustainability, archi
 <div class="wrap prose">
   <h1>Newsletter articles</h1>
   <p class="lead">Essays and community updates from the Architect Tomorrow newsletter. Subscribe on <a href="{% for s in site.data.socials %}{% if s.title contains 'Newsletter' %}{{ s.url }}{% endif %}{% endfor %}" rel="noopener">LinkedIn</a> or via <a href="{{ '/feed.xml' | relative_url }}">RSS</a>. Older writing lives in the <a href="{{ '/archive/' | relative_url }}">archive</a>.</p>
+  <p class="note">Oliver's longer pieces on enterprise architecture, AI and sustainable technology, such as <a href="https://www.cronkadvisory.com/articles/reference-architecture-consequential-ai/" rel="noopener">A Reference Architecture for Consequential AI</a>, are published on <a href="https://www.cronkadvisory.com/insights/" rel="noopener">Cronk Advisory Insights</a>.</p>
   {% assign groups = all | group_by_exp: 'a', "a.date | date: '%Y'" %}
   {% for g in groups %}
   <h2>{{ g.name }}</h2>

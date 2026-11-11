@@ -7,15 +7,31 @@ description: Reference architectures, diagrams and notable articles from the Arc
 {% assign lib = site.data.library %}
 <div class="wrap prose">
   <h1>Resources</h1>
-  <p class="lead">Practical material from the community. Jump to <a href="#reference-architecture">reference architecture</a>, <a href="#diagrams">diagrams</a> or <a href="#notable-articles">notable articles</a>.</p>
+  <p class="lead">Practical material from the community. Jump to <a href="#reference-architecture">reference architecture</a>, <a href="#diagrams">diagrams</a>, <a href="#approaches">approaches</a> or <a href="#notable-articles">notable articles</a>.</p>
 
   <h2 id="reference-architecture">Reference architecture</h2>
   {% if lib.reference_architecture and lib.reference_architecture.size > 0 %}
+  {% assign ra_links = lib.reference_architecture | where_exp: 'r', 'r.image == nil' %}
+  {% assign ra_cards = lib.reference_architecture | where_exp: 'r', 'r.image' %}
+  {% if ra_links.size > 0 %}
   <ul class="list">
-    {% for r in lib.reference_architecture %}
-    <li><a href="{% if r.url contains '://' %}{{ r.url }}{% else %}{{ r.url | relative_url }}{% endif %}">{{ r.title | escape }}</a>{% if r.description %}<span class="ex">{{ r.description }}</span>{% endif %}</li>
+    {% for r in ra_links %}
+    <li><a href="{% if r.url contains '://' %}{{ r.url }}{% else %}{{ r.url | relative_url }}{% endif %}"{% if r.url contains '://' %} rel="noopener"{% endif %}>{{ r.title | escape }}</a>{% if r.description %}<span class="ex">{{ r.description }}</span>{% endif %}</li>
     {% endfor %}
   </ul>
+  {% endif %}
+  {% if ra_cards.size > 0 %}
+  <ul class="cards cards-wide">
+    {% for r in ra_cards %}
+    <li class="card">
+      <a class="thumb thumb-light thumb-contain" href="{{ r.image | relative_url }}"><img src="{{ r.image | relative_url }}" alt="{{ r.alt | escape }}" loading="lazy"></a>
+      <h3>{{ r.title | escape }}</h3>
+      <p>{{ r.description }}</p>
+      <p class="small"><a href="{{ r.image | relative_url }}">Open full size</a>{% if r.url %} &middot; <a href="{% if r.url contains '://' %}{{ r.url }}{% else %}{{ r.url | relative_url }}{% endif %}"{% if r.url contains '://' %} rel="noopener"{% endif %}>{{ r.link_label | default: 'Read more' }}</a>{% endif %}</p>
+    </li>
+    {% endfor %}
+  </ul>
+  {% endif %}
   {% else %}
   <p class="note">Reference architectures are on their way. Have one you would like to share? <a href="{{ '/community/get-involved/' | relative_url }}">Get involved</a>.</p>
   {% endif %}
@@ -35,6 +51,15 @@ description: Reference architectures, diagrams and notable articles from the Arc
   </ul>
   {% else %}
   <p class="note">Diagrams coming soon.</p>
+  {% endif %}
+
+  {% if lib.approaches and lib.approaches.size > 0 %}
+  <h2 id="approaches">Approaches</h2>
+  <ul class="list">
+    {% for a in lib.approaches %}
+    <li><a href="{% if a.url contains '://' %}{{ a.url }}{% else %}{{ a.url | relative_url }}{% endif %}"{% if a.url contains '://' %} rel="noopener"{% endif %}>{{ a.title | escape }}</a>{% if a.description %}<span class="ex">{{ a.description }}</span>{% endif %}</li>
+    {% endfor %}
+  </ul>
   {% endif %}
 
   <h2 id="notable-articles">Notable articles</h2>
