@@ -1,14 +1,15 @@
 #!/usr/bin/env python3
 """Refresh _data/episodes.yml from the Architect Tomorrow YouTube playlist RSS feed.
 
-Also copies each episode's thumbnail to assets/images/episodes/<id>.jpg so pages never
+Also copies each episode's thumbnail to assets/images/episodes/<id>.jpg (and a 1280px
+<id>-hd.jpg for the featured video and high-DPI screens) so pages never
 load images from YouTube (faster, and no request to Google until someone presses play).
 Standard library only. YouTube's feed returns the 15 most recent items, so the
 file keeps any older entries already present and merges new ones in.
 Runs weekly in .github/workflows/update-episodes.yml, or locally:
     python3 scripts/update_episodes.py
 """
-import os, re, sys, urllib.request
+import os, re, shutil, sys, urllib.request
 import xml.etree.ElementTree as ET
 
 PLAYLIST = "PLu1Byoup02RbIKEeNSCAJcN4R7Uxb9paP"
@@ -38,16 +39,32 @@ def load_existing():
     return items
 
 
+def download(url, dest):
+    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+    data = urllib.request.urlopen(req, timeout=30).read()
+    with open(dest, "wb") as f:
+        f.write(data)
+
+
 def fetch_thumbs(items):
+    """<id>.jpg is 320x180 (lists); <id>-hd.jpg is 1280x720 (featured video, high-DPI screens).
+
+    maxresdefault is the only large 16:9 size (sd/hq are 4:3 with black bars). When a video
+    has none, the hd file falls back to a copy of the small one so the page never 404s.
+    """
     os.makedirs(THUMBS, exist_ok=True)
     for e in items:
-        dest = os.path.join(THUMBS, e["id"] + ".jpg")
-        if os.path.exists(dest):
-            continue
+        base = f"https://i.ytimg.com/vi/{e['id']}/"
+        small = os.path.join(THUMBS, e["id"] + ".jpg")
+        hd = os.path.join(THUMBS, e["id"] + "-hd.jpg")
         try:
-            req = urllib.request.Request(f"https://i.ytimg.com/vi/{e['id']}/mqdefault.jpg", headers={"User-Agent": "Mozilla/5.0"})
-            with open(dest, "wb") as f:
-                f.write(urllib.request.urlopen(req, timeout=30).read())
+            if not os.path.exists(small):
+                download(base + "mqdefault.jpg", small)
+            if not os.path.exists(hd):
+                try:
+                    download(base + "maxresdefault.jpg", hd)
+                except Exception:  # noqa: BLE001
+                    shutil.copyfile(small, hd)
         except Exception as err:  # noqa: BLE001
             print(f"thumbnail failed for {e['id']}: {err}", file=sys.stderr)
 

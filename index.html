@@ -36,7 +36,7 @@ description: An independent, community-led podcast, newsletter and global networ
     <ul class="cards">
       {% for e in episodes limit:3 offset:1 %}
       <li class="card">
-        <a class="thumb" href="https://www.youtube.com/watch?v={{ e.id }}" rel="noopener" tabindex="-1" aria-hidden="true"><img src="{{ '/assets/images/episodes/' | append: e.id | append: '.jpg' | relative_url }}" alt="" width="320" height="180" loading="lazy"></a>
+        <a class="thumb" href="https://www.youtube.com/watch?v={{ e.id }}" rel="noopener" tabindex="-1" aria-hidden="true"><img src="{{ '/assets/images/episodes/' | append: e.id | append: '.jpg' | relative_url }}" srcset="{{ '/assets/images/episodes/' | append: e.id | append: '.jpg' | relative_url }} 1x, {{ '/assets/images/episodes/' | append: e.id | append: '-hd.jpg' | relative_url }} 2x" alt="" width="320" height="180" loading="lazy"></a>
         <h3><a href="https://www.youtube.com/watch?v={{ e.id }}" rel="noopener">{{ e.title | escape }}</a></h3>
         <p class="meta"><time datetime="{{ e.date }}">{{ e.date | date: '%-d %B %Y' }}</time></p>
       </li>
