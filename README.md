@@ -45,7 +45,7 @@ Connect the repository in Siteleaf. It reads the collections in `_config.yml` (A
 | Download article images locally (smaller, no expiring links) | `pip install pillow` then `python3 scripts/localise_images.py` |
 | Edit community leads | `_data/people.yml` (optional `role`, `bio`, `url`, `photo`) |
 | Add resources, diagrams or notable articles | `_data/library.yml`; shown on `/resources/` |
-| Refresh podcast episodes | `python3 scripts/update_episodes.py`, or let `.github/workflows/update-episodes.yml` do it weekly |
+| Refresh podcast episodes | `python3 scripts/update_episodes.py`, or let `.github/workflows/update-episodes.yml` do it daily (or press "Run workflow" on it in GitHub Actions right after publishing) |
 
 ## Where can you find Architect Tomorrow?
 - [YouTube channel](https://youtube.com/ArchitectTomorrow/)

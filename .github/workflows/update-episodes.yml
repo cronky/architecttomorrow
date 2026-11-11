@@ -1,10 +1,11 @@
-# Weekly refresh of _data/episodes.yml from the YouTube playlist feed.
+# Daily refresh of _data/episodes.yml from the YouTube playlist feed.
 # YouTube is blocked in some sandboxes but fine on GitHub's runners.
+# Cloudflare Pages rebuilds the live site on any push to main, including this one.
 name: Update podcast episodes
 
 on:
   schedule:
-    - cron: "17 6 * * 1"
+    - cron: "17 6 * * *"
   workflow_dispatch:
 
 permissions:
