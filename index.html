@@ -28,7 +28,7 @@ description: An independent, community-led podcast, newsletter and global networ
     <div class="feature">
       {% include video.html id=first_ep.id title=first_ep.title %}
       <div>
-        <h3>{{ first_ep.title | escape }}</h3>
+        <h3><a href="https://www.youtube.com/watch?v={{ first_ep.id }}" rel="noopener">{{ first_ep.title | escape }}</a></h3>
         <p class="meta"><time datetime="{{ first_ep.date }}">{{ first_ep.date | date: '%-d %B %Y' }}</time></p>
       </div>
     </div>

@@ -20,7 +20,7 @@
 - name: Kenneth Igiri
   group: lead
   role: Africa lead
-  bio: Enterprise architect working in African financial services. # TODO confirm bio
+  bio: Enterprise architect working in financial services. # TODO confirm bio
   url: https://www.linkedin.com/in/kenigiri/
 - name: Tom Fairbairn
   group: lead
@@ -41,7 +41,7 @@
   url: https://www.linkedin.com/in/chrislockhart/
 - name: Sally V Pritchard
   group: guest
-  bio: AI/ML and AI governance specialist, and a regular on our annual tech trends panels.
+  bio: AI/ML and AI governance specialist, and a regular on our earlier tech trends videos.
   url: https://www.linkedin.com/in/sally-v-pritchard-95801b34/
 - name: Grant Ecker
   group: guest
