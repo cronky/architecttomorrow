@@ -23,7 +23,7 @@ If you're passionate about using architecture to make the world genuinely better
 
 ## What is Architect Tomorrow?
 
-**Origins.** Founded by [Oliver Cronk](https://www.linkedin.com/in/cronky/) at the end of 2019, before COVID, as a response to not being able to get to physical conferences. It started while Oliver was at Tanium and has been fully independent since 2022. It was inspired by Eddie Obeng's concept of a "world after midnight", where our environment changes faster than we can understand it. Today Architect Tomorrow is independent and community-led, with volunteer leads across many regions and themes worldwide.
+**Origins.** Founded by [Oliver Cronk](https://www.cronky.net/) at the end of 2019, before COVID, as a response to not being able to get to physical conferences. It started while Oliver was at Tanium and has been fully independent since 2022. It was inspired by Eddie Obeng's concept of a "world after midnight", where our environment changes faster than we can understand it. Today Architect Tomorrow is independent and community-led, with volunteer leads across many regions and themes worldwide.
 
 **What we cover.** We span four broad areas:
 
@@ -54,7 +54,7 @@ We are committed to ensuring under-represented groups working in tech are visibl
 
 ## Who leads it?
 
-Meet the [community leads]({{ '/community/' | relative_url }}), who look after Europe, the US, Australia and Africa.
+Meet the [community leads]({{ '/community/' | relative_url }}), who look after Europe, the US, Australia and Africa. Oliver's talks and appearances beyond Architect Tomorrow are listed on [cronky.net](https://cronky.net/speaking/).
 
 ## Want to take part?
 

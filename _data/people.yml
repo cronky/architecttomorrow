@@ -1,12 +1,12 @@
 # Community leads and regular guests, shown on /community/ (leads also on the home page).
-# group: lead | guest. Optional: role, bio, url (LinkedIn), photo (path under /assets/images/people/, square ~200px WebP).
+# group: lead | guest. Optional: role, bio, url (LinkedIn or personal site), photo (path under /assets/images/people/, square ~200px WebP).
 # Bios describe a specialism or industry, never an employer: people take part personally, and employers change.
 # Blank fields are simply not shown. Bios are short summaries of public descriptions: please check they are happy with them.
 - name: Oliver Cronk
   group: lead
   role: Founder, community lead and Europe lead
   bio: Started Architect Tomorrow at the end of 2019 and hosts the podcast and newsletter.
-  url: https://www.linkedin.com/in/cronky/
+  url: https://www.cronky.net/
 - name: Selena Evans
   group: lead
   role: US lead and regular co-host
@@ -20,7 +20,8 @@
 - name: Kenneth Igiri
   group: lead
   role: Africa lead
-  bio: Enterprise architect working in African financial services. # TODO confirm bio and add LinkedIn url
+  bio: Enterprise architect working in financial services. # TODO confirm bio
+  url: https://www.linkedin.com/in/kenigiri/
 - name: Tom Fairbairn
   group: lead
   role: Integration Architecture Lead
@@ -30,11 +31,23 @@
   group: guest
   bio: Business architecture pioneer, educator and author of Strategy to Reality.
   url: https://www.linkedin.com/in/whynde-kuehn
+- name: Lisa Woodall
+  group: guest
+  bio: Enterprise architect, transformation strategist and author of Whatever Next? Making Transformation Stick. # TODO confirm bio
+  url: https://www.linkedin.com/in/lisa-woodall-6220445/
 - name: Chris Lockhart
   group: guest
-  bio: Host of the Consultants Saying Things podcast.
+  bio: Author, enterprise architect and management consultant, and host of the Consultants Saying Things podcast.
   url: https://www.linkedin.com/in/chrislockhart/
+- name: Sally V Pritchard
+  group: guest
+  bio: AI/ML and AI governance specialist, and a regular on our earlier tech trends videos.
+  url: https://www.linkedin.com/in/sally-v-pritchard-95801b34/
+- name: Grant Ecker
+  group: guest
+  bio: Enterprise architecture leader and founder of the Chief Architect Network, a peer community for chief architects. # TODO confirm bio
+  url: https://www.linkedin.com/in/grantecker/
 - name: Chris Booth
   group: guest
+  bio: GenAI and knowledge graph specialist.
   url: https://www.linkedin.com/in/chatbotbooth/
-  # TODO add a short bio (describe the industry or specialism, not an employer)

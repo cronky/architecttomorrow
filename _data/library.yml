@@ -1,5 +1,23 @@
 # Content for /resources/. Add items to any list; empty lists show a "coming soon" note.
-reference_architecture: []
+# Reference architecture: items with an image show as cards (like diagrams), the rest as a list.
+reference_architecture:
+  - title: A reference architecture for consequential AI
+    description: A pragmatic, opinionated reference architecture for generative and agentic AI where getting it wrong has serious consequences. Separates the harness, the context plane and the action plane, and places a "judgement line" above which a named human owns the output. By Oliver Cronk on Cronk Advisory, October 2026.
+    url: https://www.cronkadvisory.com/articles/reference-architecture-consequential-ai/
+  - title: Human vs technology capabilities
+    description: The context stack and the judgement line, after Ackoff and Zeleny. Technology-led capabilities (infrastructure, data, information, knowledge) sit below the line. Human capabilities (judgement, empathy, wisdom, accountability, trusted relationships) sit above it, where a named human owns the output. Each band is paired with its risk and governance needs, from controls and provenance up to decision rights and assurance.
+    image: /assets/images/context-stack-judgement-line.webp
+    alt: "Stack diagram: infrastructure, data, information and knowledge as technology-led capabilities below a dashed judgement line; judgement, empathy, wisdom, accountability and trusted relationships as human capabilities above it; with controls, quality and provenance, decision rights and assurance alongside"
+    url: https://www.cronkadvisory.com/articles/artificial-intelligence-is-not-artificial-wisdom/
+    link_label: "Read where it comes from: Artificial intelligence is not artificial wisdom"
+# Approaches and frameworks: url is a site path or full URL.
+approaches:
+  - title: Pragmatic Ecosystems
+    description: Pragmatic systems thinking for architecture decisions. Instead of putting your organisation at the centre, it sits on a stack of business ecosystem, economy, society and biosphere, so you can ask what you rely on and what you affect. Includes an interactive map by sector. From Cronk Advisory.
+    url: https://www.cronkadvisory.com/approach/
+  - title: "Cybernetics: a quick reference for architects"
+    description: Stafford Beer's 1973 systems thinking translated into architectural practice, with the key terms, laws and diagnostic questions in one place. From Cronk Advisory, October 2026.
+    url: https://www.cronkadvisory.com/articles/beer-cybernetics-reference/
 # Diagrams: image is a path under /assets/images/, page is optional (link to the article that explains it)
 diagrams:
   - title: "Architecture is not neutral: twelve shifts from extractive to regenerative"
@@ -12,8 +30,30 @@ diagrams:
     image: /assets/images/sleepwalkingrisksv2.svg
     alt: Diagram of nine AI sleepwalking risks, split into enterprise and personal categories
     page: /articles/2026/ai-sleepwalking-risks-v2-including-automation-fallacies/
+  # From the archive (2020). file is an optional download (PDF) linked instead of the full-size image.
+  - title: Enterprise technology and tech management capabilities (2020)
+    description: A one-page technology capability view of enterprise IT (v1.8 beta, July 2020). It maps the capabilities that serve customers and users across channels, from data centres, networks, cloud, middleware, data and end-user computing to IoT and operational technology, with IT service management (IT4IT value streams such as Strategy to Portfolio and Detect to Correct), security, risk and supplier management alongside. Produced with Tanium, whose platform coverage is shaded on the map. CC BY-SA.
+    image: /assets/images/enterprise-technology-capabilities-2020.webp
+    alt: Dense capability map of enterprise technology, grouping boxes such as Data Centres, Cloud Management, Middleware, End User Computing, IT Service Management and Security, with a customer and channels circle in the top right
+    file: /assets/docs/IT-Architecture-2020.pdf
+    file_label: Download the PDF (1 page, 0.5 MB)
+  - title: "Virtual relay workshop: mapping the new realities of business and technology (2020)"
+    description: Output from the community's online workshop on 24 May 2020, where three groups rotated around three topics, building on each other's mind maps to explore how priorities were shifting after COVID-19. Covers people and culture (remote working, wellbeing, climate), ecosystems and business strategy (broken supply chains, forced digitalisation, new operating models) and technology and architecture (cloud, privacy tech, automation, the end of "castle and moat" security). Moderated by Sally Pritchard, Chris Lockhart and Oliver Cronk. CC BY-SA.
+    image: /assets/images/virtual-relay-workshop-2020.webp
+    alt: Mind map asking which technologies are being leveraged and which digital transformations are accelerating, with branches for cloud, decentralisation, data and AI, automation, e-commerce, distributed workforce and sustainability
+    file: /assets/docs/Virtual-Relay-Workshop-2020.pdf
+    file_label: Download the PDF (4 pages, 1.2 MB)
 # Notable articles: url is a site path or full URL. date (for ordering on the home page) and image are optional/needed respectively.
 notable:
+  - title: The AI Efficiency Fallacy
+    date: 2026-10-30
+    image: /assets/images/ai-efficiency-fallacy-train.webp
+    description: AI is sold as an efficiency play, but the technology is brute-forced and expensive, the language around it misleads, and automation erodes the human oversight that keeps it safe. On Cronk Advisory.
+    url: https://www.cronkadvisory.com/articles/the-ai-efficiency-fallacy/
+  - title: Why More AI Might Ultimately Equal More People
+    date: 2026-10-26
+    description: Adopting AI aggressively may need more people, not fewer, or enshittification becomes a serious risk. On Cronk Advisory.
+    url: https://www.cronkadvisory.com/articles/the-pendulum-swings-back/
   - title: Regenerative Architecture Principles
     date: 2026-07-01
     image: /assets/images/regenerative-principles.webp
