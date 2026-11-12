@@ -46,6 +46,7 @@ include:
   - _headers
 exclude:
   - sourcematerial
+  - voice
   - scripts
   - README.md
   - LICENSE
